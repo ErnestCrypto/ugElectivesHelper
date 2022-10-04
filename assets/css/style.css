@@ -45,6 +45,7 @@ width:10%;
 
 
 .option{
+        padding-top: 10px;
     transition:0.2s ease all;
 }
 
@@ -52,8 +53,21 @@ width:10%;
 transform:translateY(3px);
 }
 
+.selected{
+    background:#281564;
+    border-radius: 5px;
+    padding-top: 10px;
+    transition:0.2s ease all;   
+}
 
-.option p{
+.selected p{
+    color:white;
+    font-weight: 300;
+
+}
+
+
+.optionp{
     font-weight: bold;
     color:#281564;
 
