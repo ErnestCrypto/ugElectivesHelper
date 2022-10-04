@@ -105,7 +105,26 @@ transition: 0.2s ease all;
     padding:2%;
 }
 
+.login_container{
+     margin-top:2%;
+    width: 100%;
+    display: flex;
+align-items: center;
+justify-content: center;
+}
 
+.login button{
+    border:none;
+    outline:none;
+    background:#281564;
+    padding:5%;
+    color:white;
+    border-radius:25px;
+    width:50%;
+    transition: 0.2s ease all;
+}
 
-
+.login button:active{
+  transform: translateY(5px);
+}
 
