@@ -13,7 +13,6 @@ body{
     background: white;
     margin: 0 auto;
     margin-top:5%;
-  
     width:50%;
     border-radius:5px;
     overflow: hidden;
@@ -148,6 +147,160 @@ justify-content: center;
 .login button:active{
   transform: translateY(5px);
 }
+
+
+/*home.html*/
+nav{
+    padding:1% !important;
+    padding-left:10% !important;
+    background:#281564;
+}
+
+nav a {
+    color:white !important;
+}
+nav img {
+    width:100%;
+    
+}
+
+.nav_title{
+    margin:0% !important;
+    
+}
+.no_margin{
+    padding:0% !important;
+    margin:0% !important;
+}
+
+#navbarSupportedContent{
+    padding-left: 2% !important;
+}
+
+.nav_item{
+    font-weight: bold;
+    font-size:12px;
+     
+}
+
+.menu{
+    background: #281564 !important;
+}
+
+.main_body{
+    background:#EFEFEF;
+    padding:1%;
+    padding-top:5%;
+    padding-bottom:5%;
+    width: 100%;
+}
+
+.main_content{
+ background: white;
+    margin: 0 auto;
+    width:70%;
+    overflow: hidden;
+    transition: 0.2s ease all;
+    padding-bottom:2%;
+}
+
+.main_content img{
+ width:30%;
+ margin:5%;
+}
+
+.started_container{
+     margin-top:2%;
+    width: 100%;
+    display: flex;
+align-items: center;
+justify-content: center;
+}
+
+.started p{
+text-decoration: none;
+padding:5%;
+background-image: linear-gradient(to right, red, #281564);
+color:white;
+border-radius: 25px;
+transition: 0.2s ease all;
+}
+
+.started p:hover{
+background-image: linear-gradient(to right,#281564, red );
+text-decoration: none;
+color:white;
+transition: 0.5s ease all;
+
+}
+
+.started p:active{
+
+  transform: translateY(5px);
+}
+
+.foot_img{
+    padding:0% !important;
+   display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden !important;
+    height: 70vh;
+   
+    position: absolute;
+
+}
+
+
+
+.foot_img_container{
+padding:0% !important;
+background:rgba(0,0,0,0.9);
+}
+.foot_img img{
+width: 100%;
+margin:0%;
+height: 20%;
+height: 100vh;
+opacity:0.2;
+
+}
+
+.ready{
+
+    background: black;
+    margin: 0 auto;
+    position: absolute;
+    
+
+}
+
+.ready p{
+    color:white;
+    font-size:21px;
+}
+
+footer{
+    background:#2B2B2B;
+    padding:1%;
+    color:white;
+}
+
+footer p{
+    font-size:10px;
+    color:#7B7B7B;
+     
+}
+/*home.html*/
+
+
+
+
+
+
+
+
+
 
 @media screen and (max-width: 800px) {
 .content{
