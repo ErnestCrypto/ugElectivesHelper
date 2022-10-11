@@ -37,4 +37,3 @@ if (myCenter2.style.display === "none") {
       student.classList.remove("selected");
   }
 });
-
