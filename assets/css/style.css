@@ -188,12 +188,17 @@ nav img {
 }
 
 .main_body{
+    display:flex;
+    flex-direction: column-reverse;
     background:#EFEFEF;
     padding:1%;
     padding-top:5%;
     padding-bottom:5%;
     width: 100%;
+    position:absolute;
+    z-index: 10000;
 }
+
 
 .main_content{
  background: white;
@@ -286,6 +291,7 @@ justify-content: center;
 align-items: center;
 padding-top:2%;
 }
+
 
 
 #nextButton{
