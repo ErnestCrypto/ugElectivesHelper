@@ -311,6 +311,10 @@ padding-top:2%;
 
 }
 
+#previousButton:hover{
+    
+    background: #666363;
+}
 #previousButton:active{
     transform:translateY(50px);
 
@@ -327,7 +331,8 @@ padding-top:2%;
 #nextButton:hover{
    
     background-image: linear-gradient(to right,#281564, red );
-   
+       transition: 2s ease all;
+
 }
 
 
