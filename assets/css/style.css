@@ -422,13 +422,13 @@ padding-top:2%;
     background: #666363;
 }
 #previousButton:active{
-    transform:translateY(25px);
+    transform:translateY(5px);
 
 }
 
 
 #nextButton:active{
-    transform:translateY(50px);
+    transform:translateY(5px);
 
 }
 

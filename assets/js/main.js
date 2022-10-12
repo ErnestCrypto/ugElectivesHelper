@@ -37,9 +37,11 @@ for(let i=0;i<mainBody.length;i++){
 
 
 }
+
+
 for(let i=0;i<mainBody.length;i++){
  
-  previousBtn[i-2].onclick=()=>{mainBody[i].style.cssText="display:none;"}
+  previousBtn[i].onclick=()=>{mainBody[i].style.cssText="display:none;"}
 
 }
 
