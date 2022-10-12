@@ -31,20 +31,35 @@ elem.addEventListener('click',function () {
 )
 
 
+
+
+
 for(let i=0;i<mainBody.length;i++){
-  nextBtn[i].onclick=()=>{mainBody[i].style.cssText="display:none;"}
+  
+if(nextBtn[i]!=undefined){
+nextBtn[i].onclick=()=>{mainBody[i].style.cssText="display:none;"}
  mainBody[i].style.cssText="z-index:" +(100000-(i*10)) + ";";
-
+}
+else{
+    console.log(nextBtn[i]);
 
 }
 
 
-for(let i=0;i<mainBody.length;i++){
- 
-  previousBtn[i].onclick=()=>{mainBody[i].style.cssText="display:none;"}
+}
+for(let i=0;i<mainBody.length;i--){
+ if(previousBtn[i]!=undefined){
+previousBtn[i].onclick=()=>{mainBody[i].style.cssText="display:block;"
+console.log(mainBody[i]);
+}
+ }
+ else{
+    console.log(previousBtn[i]);
+
+ }
+
 
 }
-
 
 
 
