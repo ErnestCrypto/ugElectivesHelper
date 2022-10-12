@@ -187,27 +187,55 @@ nav img {
     background: #281564 !important;
 }
 
+
+
+.loading {
+  border: 16px solid #f3f3f3;
+  border-radius: 50%;
+  border-top: 16px solid #3498db;
+  width: 120px;
+  height: 120px;
+  animation: spin 2s linear infinite;
+}
+
+
+@keyframes spin {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}
+.parent{
+height:1000px;
+ overflow:hidden;
+}
+
 .main_body{
+     padding-top:5% ;
     display:flex;
     flex-direction: column-reverse;
+    justify-content: start;
     background:#EFEFEF;
-    padding:1%;
-    padding-top:5%;
+   
+  
     padding-bottom:5%;
+   height:1000px;
+
     width: 100%;
     position:absolute;
     z-index: 10000;
+
 }
 
 
 .main_content{
+    /* transform:scale(.8) !important; */
  background: white;
     margin: 0 auto;
     width:70%;
-    overflow: hidden;
+   top:0;
+   padding:2%;
     transition: 0.2s ease all;
-    padding-bottom:2%;
     animation: fadeIn 2s;
+ 
 
 }
 
@@ -215,6 +243,40 @@ nav img {
  width:30%;
  margin:5%;
 }
+
+
+.course{
+background:#EFEFEF;
+color:white;
+border-radius: 25px;
+border:none;
+outline:none;
+padding:5%;
+font-weight: bold;
+transition: 2s ease-in-out;
+}
+.course:hover{
+background:#929090;
+
+}
+
+.course:focus{
+transition: 2s ease-in-out;
+border:none;
+outline:none;
+
+}
+
+.talk{
+    display:flex;
+    justify-content:center;
+    align-items: center;
+}
+
+.think p{
+    margin:0 auto;
+}
+
 
 .started_container{
      margin-top:2%;
@@ -226,7 +288,7 @@ justify-content: center;
 
 .started p{
 text-decoration: none;
-padding:5%;
+padding:10% !important;
 background-image: linear-gradient(to right, red, #281564);
 color:white;
 border-radius: 25px;
@@ -322,7 +384,7 @@ padding-top:2%;
     background: #666363;
 }
 #previousButton:active{
-    transform:translateY(50px);
+    transform:translateY(25px);
 
 }
 
@@ -342,6 +404,23 @@ padding-top:2%;
 }
 
 
+
+#myProgress {
+width: 40%;
+background-color: #ddd;
+border-radius: 10px;
+height:10px !important;
+margin:0 auto;
+
+}
+
+#myBar {
+  width: 10%;
+  height:100%;
+  background-image: linear-gradient(to right,#281564, red );
+    border-radius: 15px;
+
+}
 
 .foot_img{
     padding:0% !important;
@@ -480,6 +559,30 @@ nav{
     background:#281564;
 }
 
+.main_body{
+    display:flex;
+    flex-direction: column-reverse;
+    background:#EFEFEF;
+   padding-top:0% ;
+    padding-bottom:0%;
+    width: 100%;
+    height:100vh;
+    position:absolute;
+    z-index: 10000;
+}
+.main_content{
+    overflow:scroll;
+
+    width:100%;
+    height:100%;
+    padding-bottom:5%;
+
+}
+
+.answer{
+   float:left;
+   width:2%;
+}
 
 .no_margin {
 display:flex;
@@ -491,11 +594,31 @@ align-items: center;
    width:30%;
 }
 
+.started p{
+
+padding:5% !important;
+
+}
+
+#nextButton{
+    padding:5%;
+    margin-bottom: 5%;
+    
+}
+
+
+#previousButton{
+    padding:5%;
+    margin-bottom: 5%;
+    
+}
+
 .titleGhana{
    left:0% !important;
 width:80% !important;
 float:left !important;
 }
+
 
 
 .main_content img{
