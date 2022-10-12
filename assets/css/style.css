@@ -225,6 +225,10 @@ height:1000px;
 
 }
 
+#lect{transform:translateY(10px)}
+
+#lect:hover{transform:translateY(15px)}
+
 #restart{
 float:right;
 border:none;
