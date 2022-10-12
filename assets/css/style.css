@@ -225,6 +225,40 @@ height:1000px;
 
 }
 
+#restart{
+float:right;
+border:none;
+outline:none;
+padding:3%;
+padding-left:8%;
+padding-right:8%;
+background:none;
+border-radius:30px;
+color:black;
+transition:0.2s ease-in-out;
+
+}
+#restart:hover{
+float:right;
+border:none;
+outline:none;
+padding:3%;
+padding-left:8%;
+padding-right:8%;
+background: #c5c5c5;
+border-radius:30px;
+color:white;
+transition:0.2s ease-in-out;
+
+}
+
+#restart:focus{
+float:right;
+border:none;
+outline:none;
+transition:0.2s ease-in-out;
+
+}
 
 .main_content{
     /* transform:scale(.8) !important; */
@@ -246,17 +280,22 @@ height:1000px;
 
 
 .course{
-background:#EFEFEF;
-color:white;
-border-radius: 25px;
 border:none;
 outline:none;
-padding:5%;
+padding:3%;
+padding-left:10%;
+padding-right:10%;
+background: #eeebeb;
+border-radius:30px;
+color:white;
+transition:0.2s ease-in-out;
+
 font-weight: bold;
-transition: 2s ease-in-out;
+transition: 0.2s ease-in-out;
 }
 .course:hover{
-background:#929090;
+background:#c7c4c4;
+transform: translateY(5px)
 
 }
 
@@ -268,9 +307,8 @@ outline:none;
 }
 
 .talk{
-    display:flex;
-    justify-content:center;
-    align-items: center;
+   margin:0 auto;
+   padding:2%;
 }
 
 .think p{
