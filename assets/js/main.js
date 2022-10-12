@@ -35,19 +35,30 @@ elem.addEventListener('click',function () {
 
 
 for(let i=0;i<mainBody.length;i++){
-  
+  if(nextBtn[i]!=undefined){
 nextBtn[i].onclick=()=>{mainBody[i].style.cssText="display:none;"}
  mainBody[i].style.cssText="z-index:" +(100000-(i*10)) + ";";
 
-}
+  }
+  else{
+     mainBody[i].style.cssText="z-index:" +(100000-(i*10)) + ";";
 
-for(let i=0;i<mainBody.length;i--){
-
-previousBtn[i].onclick=()=>{mainBody[i].style.cssText="display:block;"
-console.log(mainBody[i]);
-}
+  }
 
 }
+
+// for(let i=0;i<mainBody.length;i--){
+// if(nextBtn[i]!=undefined){
+// previousBtn[i].onclick=()=>{mainBody[i].style.cssText="display:block;"
+// console.log(mainBody[i]);
+// }
+
+// }
+//  else{
+// console.log(mainBody[i]);
+
+//   }
+// }
 
 
 
