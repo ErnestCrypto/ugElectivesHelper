@@ -30,32 +30,23 @@ elem.addEventListener('click',function () {
 }
 )
 
-
-
-
-
 for(let i=0;i<mainBody.length;i++){
   if(nextBtn[i]!=undefined){
 nextBtn[i].onclick=()=>{
-    console.log(i);
-  mainBody[i].style.cssText="display:none;"}
+console.log(i);
+mainBody[i].style.cssText="display:none;"}
  mainBody[i].style.cssText="z-index:" +(100000-(i*10)) + ";";
   }
- 
-}
-
-for(let i=0;i<mainBody.length;i++){
-  if(previousBtn[i]!=undefined){
-     i +=1;
+if(previousBtn[i]!=undefined){
 previousBtn[i].onclick=()=>{
-  console.log(i);
+    i+=1;
   mainBody[i].style.cssText="display:block;"
+   console.log(i);
+     mainBody[i].style.cssText="z-index:" +(100000+(i*10)) + ";";
+     i-=1
 }
-  mainBody[i].style.cssText="z-index:" +(100000+(i*10)) + ";";
-  i-=1;
-  }
 }
-
+}
 
 
 
