@@ -8,6 +8,7 @@ const nextBtn = document.querySelectorAll('#nextButton');
 const previousBtn = document.querySelectorAll('#previousButton');
 const elem = document.getElementById("myBar");
 const percent = document.getElementById("myPercent");
+const restart = document.getElementById("restart");
 
 elem.addEventListener('click',function () {
   var i = 0;
@@ -29,6 +30,17 @@ elem.addEventListener('click',function () {
   }
 }
 )
+
+
+restart.addEventListener('click', function(){
+  location.reload();
+})
+
+
+
+
+
+
 
 for(let i=0;i<mainBody.length;i++){
   if(nextBtn[i]!=undefined){
