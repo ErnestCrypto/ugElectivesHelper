@@ -460,6 +460,10 @@ margin:0 auto;
 
 }
 
+#option4{
+    display:none;
+}
+
 #myBar {
   width: 0%;
   height:100%;
