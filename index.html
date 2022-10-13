@@ -90,4 +90,58 @@
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/js/bootstrap.min.js"></script>
 <script src="assets/js/main.js"></script>
+
+
+<script>
+
+    let student = document.getElementById('student');
+let staff = document.getElementById('staff');
+let myCenter1 = document.getElementById('myCenter1');
+let myCenter2 = document.getElementById('myCenter2');
+
+ 
+student.addEventListener('click', function(){
+if (myCenter1.style.display === "none")
+ {
+    myCenter1.style.display = "flex";
+    myCenter2.style.display = "none";
+    student.classList.add("selected");
+    staff.classList.remove("selected");
+  } 
+  else {
+    myCenter1.style.display = "flex";
+    myCenter2.style.display = "none";
+    student.classList.add("selected");
+    staff.classList.remove("selected");
+  }
+
+});
+
+
+
+staff.addEventListener('click', function(){
+if (myCenter2.style.display === "none") {
+    myCenter2.style.display = "flex";
+    myCenter1.style.display = "none";
+     staff.classList.add("selected");
+      student.classList.remove("selected");
+  } 
+   else {
+    myCenter2.style.display = "flex";
+    myCenter1.style.display = "none";
+     staff.classList.add("selected");
+      student.classList.remove("selected");
+  }
+});
+
+
+
+
+
+
+
+</script>
+
+
+
 </html>
