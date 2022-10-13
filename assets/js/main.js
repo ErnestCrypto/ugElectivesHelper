@@ -13,7 +13,6 @@ const form = document.getElementById("myForm");
 const  course1 = document.getElementById("course1");
 const  course2 = document.getElementById("course2");
 const  course3 = document.getElementById("course3");
-const  course4 = document.getElementById("course4");
 const recommend = document.getElementById("recommend");
 var total = 0;
 
@@ -88,7 +87,6 @@ e.preventDefault();
     course1.innerHTML ="Data mining and warehousing";
     course2.innerHTML ="Mobile computing";
     course3.innerHTML ="Computational mathematics";
-    course4.innerHTML ="";
 
   }
  else if(60<=matchScore<=69){
@@ -96,21 +94,18 @@ e.preventDefault();
     course1.innerHTML ="Data mining and warehousing";
     course2.innerHTML ="Programming 2";
     course3.innerHTML ="Computational mathematics";
-    course4.innerHTML ="";
 }
  else if(matchScore==80){
     recommend.innerHTML = "Software Engineer";
     course1.innerHTML ="Embedded Systems ";
     course2.innerHTML ="Mobile computing ";
     course3.innerHTML ="Programming 2 ";
-    course4.innerHTML ="Software modeling and simulation";
 }
  else if(55<=matchScore<=59){
     recommend.innerHTML = "Web Developer";
     course1.innerHTML ="Advanced web technologies ";
     course2.innerHTML ="Mobile computing ";
     course3.innerHTML ="Programming 2 ";
-    course4.innerHTML ="Programming 3";
 }
 
   else{
@@ -118,7 +113,6 @@ e.preventDefault();
     course1.innerHTML ="Data mining and warehousing";
     course2.innerHTML ="Mobile computing";
     course3.innerHTML ="Computational mathematics";
-    course4.innerHTML ="";
   }
 
 
