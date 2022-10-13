@@ -17,17 +17,22 @@ const  course4 = document.getElementById("course4");
 const recommend = document.getElementById("recommend");
 var total = 0;
 
+for(i=0;i<form.length;i++){
+      console.log(form.elements["question1"]);
+   form.elements["question1"].onclick =()=>{
+    console.log(form.elements["question1"].value);
+    }
+}
+
+
+
+
 
 
 
 restart.addEventListener('click', function(){
   location.reload();
 })
-
-
-
-
-
 
 
 for(let i=0;i<mainBody.length;i++){
@@ -49,15 +54,18 @@ previousBtn[i].onclick=()=>{
 }
 
 form.addEventListener('submit',(e)=>{
-  e.preventDefault();
+e.preventDefault();
   for(i=0;i<form.length;i++){
     if(form.elements[i].checked){
+
       let score =parseInt(form.elements[i].value);
       total += score;  
     } 
   }
  console.log(total);
   const matchScore = (total/2000) * 100;
+  percent.innerHTML = matchScore  + "%";
+
   var i = 0;
   if (i == 0) {
     i = 1;
