@@ -55,7 +55,7 @@ previousBtn[i].onclick=()=>{
   mainBody[i].style.cssText="display:block;"
    console.log(i);
      mainBody[i].style.cssText="z-index:" +(100000+(i*10)) + ";";
-     i-=1
+    //  i-=1
 }
 }
 }

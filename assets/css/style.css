@@ -224,6 +224,10 @@ height:1000px;
     z-index: 10000;
 
 }
+button[disabled]{
+opacity: 0.5;
+cursor: not-allowed;
+}
 
 #lect{transform:translateY(10px)}
 
