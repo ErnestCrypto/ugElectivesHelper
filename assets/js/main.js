@@ -16,16 +16,6 @@ const  course3 = document.getElementById("course3");
 const recommend = document.getElementById("recommend");
 var total = 0;
 
-for(i=0;i<form.length;i++){
-      console.log(form.elements["question1"]);
-   form.elements["question1"].onclick =()=>{
-    console.log(form.elements["question1"].value);
-    }
-}
-
-
-
-
 
 
 
