@@ -76,7 +76,7 @@
 </div>
 </div>
 <!-- end main body-->
-<form action = "#" method="get">
+<form action = "#" method="get" id="myForm">
 <!-- start main body-->
 <div class = "main_body" id="q1">
     <div class = "main_content" >
@@ -1098,7 +1098,7 @@ I enjoy using open-source programming tools and languages      </p>
       <button type="button" id="previousButton" class="col-sm-2"><i class="fa fa-arrow-left" aria-hidden="true"
           style="font-size:12px;"></i> Previous</button>
 
-      <button type="button" id="nextButton" class="col-sm-2">submit <i class="fa fa-arrow-right" aria-hidden="true"
+      <button type="submit" id="nextButton" class="col-sm-2">submit <i class="fa fa-arrow-right" aria-hidden="true"
           style="font-size:12px;"></i></button>
 
     </div>
@@ -1147,14 +1147,14 @@ end main body-->
         <p>YOUR RECOMMENDED ELECTIVE COURSE</p>
       </div>
 <div class="col-sm-12 text-center qustionBody">
-  <p>
+  <p id="recommend">
   Business Intelligence Analysis
   </p>
 </div>
 <div class="col-sm-12 text-center">
   <p style="color:#6E6E6E;font-weight:600;margin:0%">Elective course match score
   <p id="myPercent" style="color:#6E6E6E;font-weight:600;margin:0%">
-    10%</p>
+    0%</p>
   </p>
 </div>
 <div id="myProgress">
@@ -1185,7 +1185,7 @@ end main body-->
         <img src="assets/img/study_80px.png" style="width:100%;" alt="logo" />
       </div>
       <div class="col-sm-6 text-center">
-        <p style="font-weight:700"> PROGRAMMING II</p>
+        <p style="font-weight:700" id = "course1"> PROGRAMMING II</p>
       </div>
       <div class="col-sm-4">
         <button type="button" class="course"> View Course</button>
@@ -1201,7 +1201,7 @@ end main body-->
         <img src="assets/img/study_80px.png" style="width:100%;" alt="logo" />
       </div>
       <div class="col-sm-6 text-center">
-        <p style="font-weight:700"> CLOUD COMPUTING
+        <p style="font-weight:700"  id = "course2"> CLOUD COMPUTING
         </p>
       </div>
       <div class="col-sm-4">
@@ -1219,7 +1219,7 @@ end main body-->
         <img src="assets/img/study_80px.png" style="width:100%;" alt="logo" />
       </div>
       <div class="col-sm-6 text-center">
-        <p style="font-weight:700"> DATABASE ADMINISTRATION
+        <p style="font-weight:700"  id = "course3"> DATABASE ADMINISTRATION
         </p>
       </div>
       <div class="col-sm-4">
@@ -1237,7 +1237,7 @@ end main body-->
         <img src="assets/img/study_80px.png" style="width:100%;" alt="logo" />
       </div>
       <div class="col-sm-6 text-center">
-        <p style="font-weight:700"> SOCIAL MEDIA MINING
+        <p style="font-weight:700"  id = "course4"> SOCIAL MEDIA MINING
         </p>
       </div>
       <div class="col-sm-4">

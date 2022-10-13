@@ -9,27 +9,15 @@ const previousBtn = document.querySelectorAll('#previousButton');
 const elem = document.getElementById("myBar");
 const percent = document.getElementById("myPercent");
 const restart = document.getElementById("restart");
+const form = document.getElementById("myForm");
+const  course1 = document.getElementById("course1");
+const  course2 = document.getElementById("course2");
+const  course3 = document.getElementById("course3");
+const  course4 = document.getElementById("course4");
+const recommend = document.getElementById("recommend");
+var total = 0;
 
-elem.addEventListener('click',function () {
-  var i = 0;
-  if (i == 0) {
-    i = 1;
-    var width = 10;
-    
-    var id = setInterval(frame, 10);
-    function frame() {
-      if (width >= 100) {
-        clearInterval(id);
-        i = 0;
-      } else {
-        width++;
-        elem.style.width = width + "%";
-        percent.innerHTML = width  + "%";
-      }
-    }
-  }
-}
-)
+
 
 
 restart.addEventListener('click', function(){
@@ -45,20 +33,99 @@ restart.addEventListener('click', function(){
 for(let i=0;i<mainBody.length;i++){
   if(nextBtn[i]!=undefined){
 nextBtn[i].onclick=()=>{
-console.log(i);
 mainBody[i].style.cssText="display:none;"}
  mainBody[i].style.cssText="z-index:" +(100000-(i*10)) + ";";
   }
 if(previousBtn[i]!=undefined){
+  
 previousBtn[i].onclick=()=>{
-    i+=1;
+   i=i+1;
   mainBody[i].style.cssText="display:block;"
-   console.log(i);
      mainBody[i].style.cssText="z-index:" +(100000+(i*10)) + ";";
-    //  i-=1
+  // i-=1;
+   
 }
 }
 }
+
+form.addEventListener('submit',(e)=>{
+  e.preventDefault();
+  for(i=0;i<form.length;i++){
+    if(form.elements[i].checked){
+      let score =parseInt(form.elements[i].value);
+      total += score;  
+    } 
+  }
+ console.log(total);
+  const matchScore = (total/2000) * 100;
+  var i = 0;
+  if (i == 0) {
+    i = 1;
+    var width = 0;
+    var id = setInterval(frame, 10);
+    function frame() {
+      if (width >= matchScore) {
+        clearInterval(id);
+        i = 0;
+      } else {
+        width++;
+        elem.style.width = width + "%";
+        percent.innerHTML = width  + "%";
+      }
+    }
+  }
+
+  if(matchScore == 0 ||matchScore == 25 || matchScore == 75 ||matchScore == 100  ){
+    recommend.innerHTML = "Data Analyst";
+    course1.innerHTML ="Data mining and warehousing";
+    course2.innerHTML ="Mobile computing";
+    course3.innerHTML ="Computational mathematics";
+    course4.innerHTML ="";
+
+  }
+ else if(60<=matchScore<=69){
+    recommend.innerHTML = "Data Scientists";
+    course1.innerHTML ="Data mining and warehousing";
+    course2.innerHTML ="Programming 2";
+    course3.innerHTML ="Computational mathematics";
+    course4.innerHTML ="";
+}
+ else if(matchScore==80){
+    recommend.innerHTML = "Software Engineer";
+    course1.innerHTML ="Embedded Systems ";
+    course2.innerHTML ="Mobile computing ";
+    course3.innerHTML ="Programming 2 ";
+    course4.innerHTML ="Software modeling and simulation";
+}
+ else if(55<=matchScore<=59){
+    recommend.innerHTML = "Web Developer";
+    course1.innerHTML ="Advanced web technologies ";
+    course2.innerHTML ="Mobile computing ";
+    course3.innerHTML ="Programming 2 ";
+    course4.innerHTML ="Programming 3";
+}
+
+  else{
+    recommend.innerHTML = "Data Analyst";
+    course1.innerHTML ="Data mining and warehousing";
+    course2.innerHTML ="Mobile computing";
+    course3.innerHTML ="Computational mathematics";
+    course4.innerHTML ="";
+  }
+
+
+
+
+
+
+}
+)
+
+
+
+
+
+
 
 
 
