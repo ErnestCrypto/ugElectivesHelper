@@ -1,347 +1,194 @@
-const mainBody = document.querySelectorAll('.main_body');
-const nextBtn = document.querySelectorAll('#nextButton');
-const previousBtn = document.querySelectorAll('#previousButton');
-const elem = document.getElementById("myBar");
-const percent = document.getElementById("myPercent");
-const restart = document.getElementById("restart");
-const form = document.getElementById("myForm");
-const  course1 = document.getElementById("course1");
-const  course2 = document.getElementById("course2");
-const  course3 = document.getElementById("course3");
-const  course4 = document.getElementById("course4");
-const  option4 = document.getElementById("option4");
+$(function(){
+   
+const questions = [
+  "I am comfortable with math and statistics",
+  "I would rather design data models and databases than charts or dashboards",
+  "I am interested in working with very large or complex datasets, including unstructured (non-tabular) data",
+  "I enjoy wrangling and transforming raw data so that others can analyze and visualize it",
+  "I enjoy exploring and analyzing raw data for meaningful patterns and insights",
+  "I prefer projects with clear and concrete objectives, as opposed to open-ended or exploratory analysis",
+  "I love to work with devices dedicated to perform a specific task",
+  "I am deeply fascinated by how embedded devices for sensing and controlling operates",
+  "I seek to understand automation and tasks that the human visual system can perform.",
+  "I am  strongly attracted and interested about robot , Robot  software, programming and the important new field of robot vision.",
+  "I love working with large amounts of data and breaking it down into easy-to-understand formats",
+  "I prefer courses that will enable me to develop new projects and give instructions on how to go about them.",
+  "I love the coding segment of Computer Science",
+  "I prefer working with numbers. I am good at math, statistics, and anything that has to do with calculations.",
+  "I am interested in finding hardware and software solutions to help businesses boost their performance.",
+  "I enjoy visual design and projects that require creativity.",
+  "I enjoy both analytical and creative thinking",
+  "I can clearly translate an analysis' result and present findings in simple words.",
+  "I enjoy thinking creatively and have a keen eye for visual design.",
+  "I enjoy using open-source programming tools and languages",
+]
+let answers = questions.map( _ => null)
+let current_index = 0
+ $('#previousButton').hide()
+$('#myResult').hide()
 
-const recommend = document.getElementById("recommend");
-var total = 0;
 
-//next
-var question1 = form.elements['question1'];
-var nextButton1 = question1[question1.length-1];
-for(i=0;i<question1.length;i++){
- question1[i].addEventListener('click',()=>{
-    nextButton1.removeAttribute('disabled'); 
- })
+
+
+ $("#questionbox").text(questions[current_index])
+$("#outof").text(`QUESTION ${current_index + 1} OF ${questions.length}`)
+$('#previousButton').click(()=>{
+     $('#nextButton').removeAttr('disabled');
+    current_index--
+    $("#questionbox").text(questions[current_index])
+    if(current_index==0){
+        $('#previousButton').hide()
+    }
+    $("#outof").text(`QUESTION ${current_index+1} OF ${questions.length}`)
+     triggeranswer()
+}) 
+
+
+
+
+$('.question').change((e)=>{
+    e.stopPropagation() 
+    $('#nextButton').removeAttr('disabled');
+    let val = e.target.value
+  if(val !== ""){
+        answers[current_index] = val
+    }
+    
+})
+$('#nextButton').click(()=>{
+     $('#nextButton').attr("disabled", "disabled");
+    current_index++
+    $("#questionbox").text(questions[current_index])
+    if(current_index>=1){
+        $('#previousButton').show()
+    }
+    $("#outof").text(`QUESTION ${current_index + 1} OF ${questions.length}`)
+    triggeranswer()
+
+    if(current_index == questions.length){
+        compute();
+    }
+
+})
+
+var triggeranswer = ()=>{
+    let chosen = answers[current_index]
+    if( chosen !== null){
+        $('.question').each((index,element)=>{
+            if($(element).val()==chosen){
+                $(element).prop('checked',true)
+                $('#nextButton').removeAttr('disabled');
+            }
+        })
+    }else{
+         $('#myForm')[0].reset()
+    }
 }
-//next
 
 
-
-//next
-var question2 = form.elements['question2'];
-var nextButton2 = question2[question2.length-1];
-for(i=0;i<question2.length;i++){
- question2[i].addEventListener('click',()=>{
-    nextButton2.removeAttribute('disabled'); 
- })
-}
-//next
-
-
-//next
-var question3 = form.elements['question3'];
-var nextButton3 = question3[question3.length-1];
-for(i=0;i<question3.length;i++){
- question3[i].addEventListener('click',()=>{
-    nextButton3.removeAttribute('disabled'); 
- })
-}
-//next
-
-
-
-
-//next
-var question4 = form.elements['question4'];
-var nextButton4 = question4[question4.length-1];
-for(i=0;i<question4.length;i++){
- question4[i].addEventListener('click',()=>{
-    nextButton4.removeAttribute('disabled'); 
- })
-}
-//next
-
-
-
-//next
-var question5 = form.elements['question5'];
-var nextButton5 = question5[question5.length-1];
-for(i=0;i<question5.length;i++){
- question5[i].addEventListener('click',()=>{
-    nextButton5.removeAttribute('disabled'); 
- })
-}
-//next
-
-
-//next
-var question6 = form.elements['question6'];
-var nextButton6 = question6[question6.length-1];
-for(i=0;i<question6.length;i++){
- question6[i].addEventListener('click',()=>{
-    nextButton6.removeAttribute('disabled'); 
- })
-}
-//next
-
-
-
-//next
-var question7 = form.elements['question7'];
-var nextButton7 = question7[question7.length-1];
-for(i=0;i<question7.length;i++){
- question7[i].addEventListener('click',()=>{
-    nextButton7.removeAttribute('disabled'); 
- })
-}
-//next
-
-
-
-
-//next
-var question8 = form.elements['question8'];
-var nextButton8 = question8[question8.length-1];
-for(i=0;i<question8.length;i++){
- question8[i].addEventListener('click',()=>{
-    nextButton8.removeAttribute('disabled'); 
- })
-}
-//next
-
-
-
-//next
-var question9 = form.elements['question9'];
-var nextButton9 = question9[question9.length-1];
-for(i=0;i<question9.length;i++){
- question9[i].addEventListener('click',()=>{
-    nextButton9.removeAttribute('disabled'); 
- })
-}
-//next
-
-
-//next
-var question10 = form.elements['question10'];
-var nextButton10 = question10[question10.length-1];
-for(i=0;i<question10.length;i++){
- question10[i].addEventListener('click',()=>{
-    nextButton10.removeAttribute('disabled'); 
- })
-}
-//next
-
-//next
-var question11 = form.elements['question11'];
-var nextButton11 = question11[question11.length-1];
-for(i=0;i<question11.length;i++){
- question11[i].addEventListener('click',()=>{
-    nextButton11.removeAttribute('disabled'); 
- })
-}
-//next
-//next
-var question12 = form.elements['question12'];
-var nextButton12 = question12[question12.length-1];
-for(i=0;i<question12.length;i++){
- question12[i].addEventListener('click',()=>{
-    nextButton12.removeAttribute('disabled'); 
- })
-}
-//next
-
-//next
-var question13 = form.elements['question13'];
-var nextButton13 = question13[question13.length-1];
-for(i=0;i<question10.length;i++){
- question13[i].addEventListener('click',()=>{
-    nextButton13.removeAttribute('disabled'); 
- })
-}
-//next
-
-//next
-var question14 = form.elements['question14'];
-var nextButton14 = question14[question14.length-1];
-for(i=0;i<question14.length;i++){
- question14[i].addEventListener('click',()=>{
-    nextButton14.removeAttribute('disabled'); 
- })
-}
-//next
-
-
-//next
-var question15 = form.elements['question15'];
-var nextButton15 = question15[question15.length-1];
-for(i=0;i<question15.length;i++){
- question15[i].addEventListener('click',()=>{
-    nextButton15.removeAttribute('disabled'); 
- })
-}
-//next
-//next
-var question16 = form.elements['question16'];
-var nextButton16 = question16[question16.length-1];
-for(i=0;i<question16.length;i++){
- question16[i].addEventListener('click',()=>{
-    nextButton16.removeAttribute('disabled'); 
- })
-}
-//next
-//next
-var question17 = form.elements['question17'];
-var nextButton17 = question17[question17.length-1];
-for(i=0;i<question17.length;i++){
- question17[i].addEventListener('click',()=>{
-    nextButton17.removeAttribute('disabled'); 
- })
-}
-//next
-//next
-var question18 = form.elements['question18'];
-var nextButton18 = question18[question18.length-1];
-for(i=0;i<question18.length;i++){
- question18[i].addEventListener('click',()=>{
-    nextButton18.removeAttribute('disabled'); 
- })
-}
-//next
-//next
-var question19 = form.elements['question19'];
-var nextButton19 = question19[question19.length-1];
-for(i=0;i<question19.length;i++){
- question19[i].addEventListener('click',()=>{
-    nextButton19.removeAttribute('disabled'); 
- })
-}
-//next
-
-//next
-var question20 = form.elements['question20'];
-var nextButton20 = question20[question20.length-1];
-for(i=0;i<question20.length;i++){
- question20[i].addEventListener('click',()=>{
-    nextButton20.removeAttribute('disabled'); 
- })
-}
-//next
-
-
-
-
-
-restart.addEventListener('click', function(){
-  location.reload();
+$('#restart').click(()=>{
+    location.reload(true);
 })
 
 
-for(let i=0;i<mainBody.length;i++){
-  if(nextBtn[i]!=undefined){
-nextBtn[i].onclick=()=>{
-mainBody[i].style.cssText="display:none;"}
- mainBody[i].style.cssText="z-index:" +(100000-(i*10)) + ";";
-  }
-if(previousBtn[i]!=undefined){
-  
-previousBtn[i].onclick=()=>{
-   i=i+1;
-  mainBody[i].style.cssText="display:block;"
-     mainBody[i].style.cssText="z-index:" +(100000+(i*10)) + ";";
-  // i-=1;
-   
-}
-}
-}
-
-form.addEventListener('submit',(e)=>{
-e.preventDefault();
-  for(i=0;i<form.length;i++){
-    if(form.elements[i].checked){
-
-      let score =parseInt(form.elements[i].value);
-      total += score;  
+var compute = ()=>{
+    var total = 0;
+$('#myForm').hide()
+$.each(answers,(index)=>{
+    if(answers[index]!=null){
+    numAnswer = parseInt(answers[index]) ;
+ var score = numAnswer
+total +=score
     } 
-  }
- console.log(total);
-  const matchScore = (total/2000) * 100;
-  percent.innerHTML = matchScore  + "%";
+})
+outcome = (total/2000)*100
+ outcome = parseInt(outcome);
+ $('#myPercent').text(outcome+"%")
+ progress();
+ myRecommended();
+$('#myResult').show()
+}
 
+
+
+var progress = ()=>{
+var elem = $('#myBar');
   var i = 0;
   if (i == 0) {
     i = 1;
     var width = 0;
     var id = setInterval(frame, 10);
     function frame() {
-      if (width >= matchScore) {
+      if (width >= outcome) {
         clearInterval(id);
         i = 0;
       } else {
         width++;
-        elem.style.width = width + "%";
-        percent.innerHTML = width  + "%";
+        $.each(elem,(index)=>{
+            elem[index].style.width = width + "%";
+        })
       }
     }
   }
+}
 
-  if(matchScore == 0 ||matchScore == 25 || matchScore == 75 ||matchScore == 100  ){
-    recommend.innerHTML = "Data Analyst";
-    course1.innerHTML ="Data mining and warehousing";
-    course2.innerHTML ="Mobile computing";
-    course3.innerHTML ="Computational mathematics";
-   
-
-  }
- else if(60<=matchScore<=69){
-    recommend.innerHTML = "Data Scientists";
-    course1.innerHTML ="Data mining and warehousing";
-    course2.innerHTML ="Programming 2";
-        option4.style.cssText="display:block;"
-    course3.innerHTML ="Computational mathematics";
+var myRecommended = ()=>{
+    if(outcome == 0 || outcome== 25 || outcome==50 || outcome==75|| outcome==100 ){
+        $('#recommend').text("Data Analyst");
+       $('#course1').text('Data mining and warehousing');
+        $('#course2').text('Mobile Computing');
+       $('#course3').text('Computational Mathematics');
+    }
     
+else if(outcome>=85 && outcome<=90 ){
+ $('#recommend').text("Software Engineer ");
+    $('#course1').text('Embedded systems ');
+    $('#course2').text('Software Modeling and Simulation');
+    $('#course3').text('Mobile Computing');
+$('#writeUp1').text(    `software engineering requires an in-depth study of software design 
+and implementation using a modern, object-oriented language with support for graphical user 
+interfaces and complex data structures. Topics covered will be specifications, design patterns, and abstraction techniques, including typing,
+ access control, inheritance, and polymorphism. Students will learn the proper engineering use of techniques such as information hiding, classes, 
+objects, inheritance, exception handling, event-based systems, and concurrency. This course equips students with practical set of skills for the 
+development of software. The software crisis; why software fail (case studies);  Design as modeling; The Unified Modeling Language, Concepts and 
+techniques for testing and modifying software in evolving environments. Topics include software testing at the unit, module, subsystem, and system levels; 
+developer testing; automatic and manual techniques for generating test data; testing concurrent and distributed software; designing and implementing 
+software to increase maintainability and reuse; evaluating software for change; and validating software changes. `);
+$('#writeUp2').text('A Software Engineer role may be a good fit if you:')
+$('#writeUp2a').text('Love solving real world problems with technology')
+$('#writeUp2b').text('Want to flex both your creative and critical thinking skills')
+$('#writeUp2c').text('Prefer working with prepared data and under specific project guidelines')
 }
- else if(matchScore==80){
-    recommend.innerHTML = "Software Engineer";
-    course1.innerHTML ="Embedded Systems ";
-    course2.innerHTML ="Mobile computing ";
-    course3.innerHTML ="Programming 2 ";
-    option4.style.cssText="display:block;"
-    course4.innerHTML ="Software modeling and simulation";
-}
- else if(55<=matchScore<=59){
-    recommend.innerHTML = "Web Developer";
-    course1.innerHTML ="Advanced web technologies ";
-    course2.innerHTML ="Mobile computing ";
-    course3.innerHTML ="Programming 2 ";
-      option4.style.cssText="display:block;"
-    course4.innerHTML ="Programming 3";
+    else if(outcome==80){
+ $('#recommend').text("Games and App Developer ");
+       $('#course1').text('Embedded systems ');
+        $('#course2').text('Programming 2');
+       $('#course3').text('Introduction to computer graphics');
 }
 
-  else{
-    recommend.innerHTML = "Data Analyst";
-    course1.innerHTML ="Data mining and warehousing";
-    course2.innerHTML ="Mobile computing";
-    course3.innerHTML ="Computational mathematics";
-    course4.innerHTML ="";
-  }
-
-
-
-
-
+else if(outcome>=60 && outcome<=69){
+ $('#recommend').text("Data Scientists");
+       $('#course1').text('Introductory Abstract Algebra');
+        $('#course2').text('Introductory Computational mathematics');
+       $('#course3').text('Data Ming and warehousing');
+        $('#writeUp1').text(    `Data Scientists and Machine Learning Engineers often focus on predictive analytics, using data to test hypotheses, train models, and predict uncertain outcomes.
+Data Scientists typically excel in math and statistics, leverage open-source tools and programming languages like Python or R, and often handle large, structured and unstructured data sources. `);
+$('#writeUp2').text('A Data Science or Machine Learning role may be a good fit if you:')
+$('#writeUp2a').text('Love to program and write code')
+$('#writeUp2b').text('Enjoy math and statistics')
+$('#writeUp2c').text('Can distill complex topics and communicate them clearly')
+    
 
 }
-)
 
-//new code
-
-
-
-
-
-
-
-
+else if(outcome>=55 && outcome <=60){
+ $('#recommend').text("Advanced web technologies ");
+       $('#course1').text('Embedded systems ');
+        $('#course2').text('Mobile computing  ');
+       $('#course3').text('Programming 2');
+       $('#course4').text('Programming 3');
+    $('#option4').show();
+}
 
 
 
@@ -349,11 +196,17 @@ e.preventDefault();
 
 
 
+ else{
+        $('#recommend').text("Data Analyst");
+       $('#course1').text('Data mining and warehousing');
+        $('#course2').text('Mobile Computing');
+       $('#course3').text('Computational Mathematics');
+    }
+
+}
 
 
-
-
-
+})
 
 
 
