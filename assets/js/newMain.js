@@ -43,6 +43,9 @@ $('#previousButton').click(()=>{
      triggeranswer()
 }) 
 
+
+
+
 $('.question').change((e)=>{
     e.stopPropagation() 
     $('#nextButton').removeAttr('disabled');
@@ -74,6 +77,7 @@ var triggeranswer = ()=>{
         $('.question').each((index,element)=>{
             if($(element).val()==chosen){
                 $(element).prop('checked',true)
+                $('#nextButton').removeAttr('disabled');
             }
         })
     }else{
