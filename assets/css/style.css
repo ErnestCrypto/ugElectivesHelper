@@ -471,7 +471,6 @@ padding-top:2%;
 
 
 #nextButton:hover{
-   
     background-image: linear-gradient(to right,#281564, red );
        transition: 2s ease all;
 
@@ -480,19 +479,19 @@ padding-top:2%;
 
 #nextButtonstarted:active{
     transform:translateY(5px);
-
 }
 
 
 
 #nextButtonstarted:hover{
-   
+   text-decoration: none;
     background-image: linear-gradient(to right,#281564, red );
-       transition: 2s ease all;
-
+    transition: 2s ease all;
 }
 
-
+.myInput{
+    margin:2%;
+}
 
 #myProgress {
 width: 40%;
@@ -640,6 +639,37 @@ display: flex;
 
 /*about.html*/
 
+/*contact.html*/
+.contact{
+    height:100vh;
+}
+.contact_elements{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    padding:5%;
+}
+
+.contact_button{
+    border:none;
+    outline:none;
+    background-image: linear-gradient(to right, red, #281564);
+    padding:2%;
+    border-radius: 12px;
+    color:white;
+    margin-left:2%;
+}
+.contact_button:hover{
+    border:none;
+    outline:none;
+    background-image: linear-gradient(to right, #281564, red);
+    padding:2%;
+    border-radius: 12px;
+    color:white;
+    margin-left:2%;
+}
+
+/*contact.html*/
 
 
 
