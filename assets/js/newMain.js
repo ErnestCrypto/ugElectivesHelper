@@ -59,7 +59,6 @@ $('.question').change((e)=>{
 })
 $('#nextButton').click(()=>{
      $('#nextButton').attr("disabled", "disabled");
-        console.log("diabled")
     current_index++
     $("#questionbox").text(questions[current_index])
     if(current_index>=1){
@@ -96,7 +95,6 @@ $('#restart').click(()=>{
 var compute = ()=>{
     var total = 0;
 $('#myForm').hide()
-console.log(answers)
 $.each(answers,(index)=>{
     if(answers[index]!=null){
     numAnswer = parseInt(answers[index]) ;
@@ -105,7 +103,6 @@ total +=score
     } 
 })
 outcome = (total/2000)*100
- console.log(outcome)
  outcome = outcome.toFixed(2);
  $('#myPercent').text(outcome+"%")
  progress();
@@ -117,7 +114,6 @@ $('#myResult').show()
 
 var progress = ()=>{
 var elem = $('#myBar');
-console.log(elem);
   var i = 0;
   if (i == 0) {
     i = 1;
@@ -138,25 +134,14 @@ console.log(elem);
 }
 
 var myRecommended = ()=>{
-    if(outcome == 0.00 || outcome== 25.00 || outcome==75.00 || outcome==100.00){
+    if(outcome == 0.00 || outcome== 25.00 || outcome==50.00 || outcome==75.00|| outcome==100.00 ){
         $('#recommend').text("Data Analyst");
        $('#course1').text('Data mining and warehousing');
         $('#course2').text('Mobile Computing');
        $('#course3').text('Computational Mathematics');
     }
-else if(60.00<=outcome<=69.00){
- $('#recommend').text("Data Scientists");
-       $('#course1').text('Data mining and warehousing');
-        $('#course2').text('Mobile Computing');
-       $('#course3').text('Computational Mathematics');
-}
-else if(outcome==80.00){
- $('#recommend').text("Games and App Developer ");
-       $('#course1').text('Embedded systems ');
-        $('#course2').text('Programming 2');
-       $('#course3').text('Introduction to computer graphics');
-}
-else if(85.00<=outcome<=90.00){
+    
+else if(85.00<=outcome<=90.00 ){
  $('#recommend').text("Software Engineer ");
     $('#course1').text('Embedded systems ');
     $('#course2').text('Software Modeling and Simulation');
@@ -177,6 +162,22 @@ $('#writeUp2c').text('Prefer working with prepared data and under specific proje
     
 
 }
+    else if(outcome==80.00){
+ $('#recommend').text("Games and App Developer ");
+       $('#course1').text('Embedded systems ');
+        $('#course2').text('Programming 2');
+       $('#course3').text('Introduction to computer graphics');
+}
+
+else if(60<= outcome <=69){
+ $('#recommend').text("Data Scientists");
+       $('#course1').text('Data mining and warehousing');
+        $('#course2').text('Mobile Computing');
+       $('#course3').text('Computational Mathematics');
+              console.log(outcome)
+
+}
+
 else if(55.00<=outcome<=60.00){
  $('#recommend').text("Advanced web technologies ");
        $('#course1').text('Embedded systems ');
