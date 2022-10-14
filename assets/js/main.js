@@ -190,10 +190,22 @@ else if(outcome>=55 && outcome <=60){
     $('#option4').show();
 }
 
-
-
-
-
+else if(outcome>=70 && outcome<=79 ){
+ $('#recommend').text("Data Visualization Specialists ");
+    $('#course1').text('Data Mining and Warehousing');
+    $('#course2').text('Introductory Abstract Algebra');
+    $('#course3').text('Introductory Computational mathematics');
+$('#writeUp1').text(    `Data Visualization Specialists possess a unique and powerful ability to give data a voice.
+They use visual design and storytelling to 
+bridge the gap between analysts and business 
+leaders, translating raw data into clear and compelling insights. 
+Data Visualization Specialists typically play a specialized role, 
+focusing more on analysis and visualization than data engineering. `);
+$('#writeUp2').text('A Data Visualization Specialist role may be a good fit if you:')
+$('#writeUp2a').text('Love designing visuals to tell stories and bring data to life')
+$('#writeUp2b').text('Prefer working with prepared data and under specific project guidelines')
+$('#writeUp2c').text('Prefer working with prepared data and under specific project guidelines')
+}
 
 
  else{

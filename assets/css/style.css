@@ -571,6 +571,44 @@ footer p{
 }
 /*home.html*/
 
+/*about.html*/
+.about{
+   background-image:url('/assets/img/Internet_Business_Technology.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    padding:0 !important;
+    
+ }
+
+ .about_cover{
+    background:rgba(0,0,0,0.5);
+    height:80vh;
+    
+     padding:0 !important;
+ }
+
+ .about_content{
+background:white;
+ position:absolute;
+ display:flex;
+ align-items: center;
+ justify-content: center;
+    
+ }
+
+
+.about_content{
+color:rgb(107, 105, 105);
+ font-weight:600;
+     height:50vh;
+
+ }
+
+.about2{
+    margin: 0 auto;
+}
+
+/*about.html*/
 
 
 
