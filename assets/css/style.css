@@ -150,6 +150,29 @@ justify-content: center;
 
 
 /*home.html*/
+
+.profile{
+    padding:1%;
+}
+.profile P{
+    font-size:20px;
+    font-weight: 600;
+    text-transform:capitalize;
+    color:#281564;
+    
+}
+.profile img{
+    width:10%;
+    float:right;
+   
+}
+
+.myName{
+    display:flex;
+    align-items: center;
+}
+
+
 nav{
     padding:1% !important;
     padding-left:10% !important;
