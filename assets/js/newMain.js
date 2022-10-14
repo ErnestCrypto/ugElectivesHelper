@@ -38,6 +38,7 @@ $('#nextButtonstarted').click(()=>{
  $("#questionbox").text(questions[current_index])
 $("#outof").text(`QUESTION ${current_index + 1} OF ${questions.length}`)
 $('#previousButton').click(()=>{
+     $('#nextButton').removeAttr('disabled');
     current_index--
     $("#questionbox").text(questions[current_index])
     if(current_index==0){
