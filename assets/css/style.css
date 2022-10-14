@@ -204,7 +204,6 @@ nav img {
   100% { transform: rotate(360deg); }
 }
 .parent{
-height:1000px;
  overflow:hidden;
 }
 
@@ -217,11 +216,9 @@ height:1000px;
    
   
     padding-bottom:5%;
-   height:1000px;
 
     width: 100%;
-    position:absolute;
-    z-index: 10000;
+    
 
 }
 button[disabled]{
@@ -277,7 +274,6 @@ transition:0.2s ease-in-out;
    padding:2%;
     transition: 0.2s ease all;
     animation: fadeIn 2s;
- overflow-y: scroll;
 
 }
 
@@ -399,7 +395,16 @@ justify-content: center;
 align-items: center;
 padding-top:2%;
 }
-
+#nextButtonstarted{
+       border:none;
+    outline:none;
+    background-image: linear-gradient(to right, red, #281564);
+    padding:10%;
+    border-radius: 35px;
+    color:white;
+    margin-left:2%;
+   
+}
 
 
 #nextButton{
@@ -443,6 +448,21 @@ padding-top:2%;
 
 
 #nextButton:hover{
+   
+    background-image: linear-gradient(to right,#281564, red );
+       transition: 2s ease all;
+
+}
+
+
+#nextButtonstarted:active{
+    transform:translateY(5px);
+
+}
+
+
+
+#nextButtonstarted:hover{
    
     background-image: linear-gradient(to right,#281564, red );
        transition: 2s ease all;

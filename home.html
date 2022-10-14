@@ -32,26 +32,20 @@
   <div class="collapse navbar-collapse" id="navbarSupportedContent">
     <ul class="navbar-nav mr-auto">
       <li class="nav-item active">
-        <a class="nav-link nav_item" href="#">HOME</a>
+        <a class="nav-link nav_item" href="home.html">HOME</a>
       </li>
       <li class="nav-item">
         <a class="nav-link nav_item" href="#">ABOUT</a>
       </li>
-      <li class="nav-item dropdown">
-        <a class="nav-link dropdown-toggle nav_item" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-          SECTIONS
-        </a>
-        <div class="dropdown-menu menu" aria-labelledby="navbarDropdown">
-          <a class="dropdown-item " href="#">Action</a>
-          <a class="dropdown-item " href="#">Another action</a>
-         
+      <li class="nav-item">
+        <a class="nav-link nav_item" href="#">CONTACT US</a>
       </li>
-      
     </ul>
   </div>
 </nav>
 <!--end nav-->
 <div class="parent">
+  <form method="get" action="questions.html"> 
 <!-- start main body-->
 <div class = "main_body" id ="intro">
     <div class = "main_content" >
@@ -69,230 +63,14 @@
 
 <div class="col-sm-12 started_container">
 <div class="col-sm-3 started">
-    <p  id="nextButtonstarted">Get Started <i class="fa fa-arrow-right" aria-hidden="true" style="font-size:12px;"></i></p>
+    <button  id="nextButtonstarted" type="submit">Get Started <i class="fa fa-arrow-right" aria-hidden="true" style="font-size:12px;"></i></button>
 </div>
 </div>
 </div>
 </div>
 </div>
 <!-- end main body-->
-  <form action="#" method="get" id="myForm">
-<!-- start main body-->
-<div class="main_body" id="q3">
-  <div class="main_content">
-    <div class="col-sm-12 text-center qustionLabel">
-      <p id="outof"></p>
-    </div>
-    <div class="col-sm-12 text-center qustionBody">
-      <p id="questionbox">I am interested in working with very large or complex datasets, including unstructured (non-tabular) data</p>
-    </div>
-    <div class="col-sm-10 answers">
-
-      <div class="row">
-        <div class="col-sm-2 text-center">
-          <input type="radio" name="question" class="question" value="0" />
-          <p>Strongly Disagree</p>
-        </div>
-        <div class="col-sm-3 text-center">
-          <input type="radio" name="question" class="question" value="25" />
-          <p>Disagree</p>
-        </div>
-        <div class="col-sm-2 text-center">
-          <input type="radio" name="question" class="question" value="50" />
-          <p>Neutral</p>
-        </div>
-        <div class="col-sm-3 text-center">
-          <input type="radio" name="question" class="question" value="75" />
-          <p>Agree</p>
-        </div>
-        <div class="col-sm-2 text-center">
-          <input type="radio" name="question" class="question" value="100" />
-          <p> Strongly Agree</p>
-        </div>
-      </div>
-    </div>
-
-    <div class="col-sm-12 next">
-      <button type="button" id="previousButton" class="col-sm-2"><i class="fa fa-arrow-left" aria-hidden="true"
-          style="font-size:12px;"></i> Previous</button>
-
-      <button type="button" id="nextButton" class="col-sm-2" name="question1" disabled>Next <i class="fa fa-arrow-right"
-          aria-hidden="true" style="font-size:12px;"></i></button>
-
-    </div>
-
-
-  </div>
-
-</div>
-<!-- end main body-->
-
 </form>
-
-
-
-
-<!-- start main body-->
-<div class="main_body" id="myResult">
-  <div class="main_content">
-    <div class="col-sm-12 text-center qustionLabel">
-      <p>YOUR RECOMMENDED CAREER PATH</p>
-    </div>
-    <div class="col-sm-12 text-center qustionBody">
-      <p id="recommend">
-        Business Intelligence Analysis
-      </p>
-    </div>
-    <div class="col-sm-12 text-center">
-      <p style="color:#6E6E6E;font-weight:600;margin:0%">Career Match Score
-      <p id="myPercent" style="color:#6E6E6E;font-weight:600;margin:0%">
-        0%</p>
-      </p>
-    </div>
-    <div id="myProgress">
-      <div id="myBar"></div>
-    </div>
-
-    <br>
-    <div class="col-sm-12">
-      <div class="row">
-        <div class="col-sm-6">
-          <p id="writeUp1">Business Intelligence Analysts help companies make smart, data-driven decisions.
-            BI Analysts are involved in the entire analytics workflow, from data prep and QA to data modeling,
-            exploratory analysis, and visualization. They speak the language of data, translating raw numbers
-            into the insights that stakeholders need to drive the business forward.</p>
-          <p style="font-weight:600" id="writeUp2">A BI Analyst role may be a good fit if you:</p>
-          <ul>
-            <li id="writeUp2a">Love analyzing data for insights and convincing stakeholders to act</li>
-            <li id="writeUp2b">Enjoy solving a wide variety of business cases and open-ended tasks</li>
-            <li id="writeUp2c">Want to build a deep skillset, from data engineering to analysis and visualization</li>
-          </ul>
-        </div>
-        <div class="col-sm-6">
-          <p style="font-weight:600">Based on your responses, we think you’d love these elective courses:</p>
-          <!---->
-          <div class="col-sm-12">
-            <div class="row">
-              <div class="col-sm-2">
-                <img src="assets/img/study_80px.png" style="width:100%;" alt="logo" />
-              </div>
-              <div class="col-sm-6 text-center">
-                <p style="font-weight:700" id="course1"> PROGRAMMING II</p>
-              </div>
-              <div class="col-sm-4">
-                <button type="button" class="course"> View Course</button>
-              </div>
-            </div>
-          </div>
-          <!---->
-          <br>
-          <!---->
-          <div class="col-sm-12">
-            <div class="row">
-              <div class="col-sm-2">
-                <img src="assets/img/study_80px.png" style="width:100%;" alt="logo" />
-              </div>
-              <div class="col-sm-6 text-center">
-                <p style="font-weight:700" id="course2"> CLOUD COMPUTING
-                </p>
-              </div>
-              <div class="col-sm-4">
-                <button type="button" class="course"> View Course</button>
-              </div>
-            </div>
-          </div>
-          <!---->
-          <br>
-
-          <!---->
-          <div class="col-sm-12">
-            <div class="row">
-              <div class="col-sm-2">
-                <img src="assets/img/study_80px.png" style="width:100%;" alt="logo" />
-              </div>
-              <div class="col-sm-6 text-center">
-                <p style="font-weight:700" id="course3"> DATABASE ADMINISTRATION
-                </p>
-              </div>
-              <div class="col-sm-4">
-                <button type="button" class="course"> View Course</button>
-              </div>
-            </div>
-          </div>
-          <!---->
-          <br>
-          <!---->
-          <div class="col-sm-12" id="option4">
-            <div class="row">
-              <div class="col-sm-2">
-                <img src="assets/img/study_80px.png" style="width:100%;" alt="logo" />
-              </div>
-              <div class="col-sm-6 text-center">
-                <p style="font-weight:700" id="course4"> DATABASE ADMINISTRATION
-                </p>
-              </div>
-              <div class="col-sm-4">
-                <button type="button" class="course"> View Course</button>
-              </div>
-            </div>
-          </div>
-          <!---->
-              <br>
-              <!---->
-              <div class="col-sm-12" id="option5">
-                <div class="row">
-                  <div class="col-sm-2">
-                    <img src="assets/img/study_80px.png" style="width:100%;" alt="logo" />
-                  </div>
-                  <div class="col-sm-6 text-center">
-                    <p style="font-weight:700" id="course5"> DATABASE ADMINISTRATION
-                    </p>
-                  </div>
-                  <div class="col-sm-4">
-                    <button type="button" class="course"> View Course</button>
-                  </div>
-                </div>
-              </div>
-              <!---->
-          <br>
-
-          <br>
-          <div class="col-sm-12">
-            <button type="button" id="restart"> <i class="fa fa-retweet"></i> Restart</button>
-          </div>
-        </div>
-      </div>
-    </div>
-    <hr>
-    <div class="col-sm-12 ">
-      <div class="row talk">
-        <div class="col-sm-5">
-          <img src="assets/img/undraw_interview_re_e5jn.svg" style="width:20%; float:right" alt="logo" />
-        </div>
-        <div class="col-sm-6 text-center">
-          <button class="course" style="float:left">Talk To The Course Advisors</button>
-        </div>
-
-
-      </div>
-
-    </div>
-
-  </div>
-
-
-
-
-</div>
-</div>
-
-<!-- end main body-->
-
-
-
-
-
-
 
 </div>
 <!--start footer-->
@@ -316,12 +94,6 @@
     </div>
 </footer>
 <!--end footer-->
-
-
-
-
-
-
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/js/bootstrap.min.js"></script>
 <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>

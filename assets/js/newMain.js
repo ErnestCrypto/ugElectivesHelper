@@ -25,15 +25,10 @@ const questions = [
 let answers = questions.map( _ => null)
 let current_index = 0
  $('#previousButton').hide()
-$('#myForm').hide()
 $('#myResult').hide()
 
 
-$('#nextButtonstarted').click(()=>{
-    $('#info').hide()
-    $('#myForm').show()
 
-})
 
  $("#questionbox").text(questions[current_index])
 $("#outof").text(`QUESTION ${current_index + 1} OF ${questions.length}`)
@@ -103,7 +98,7 @@ total +=score
     } 
 })
 outcome = (total/2000)*100
- outcome = outcome.toFixed(2);
+ outcome = parseInt(outcome);
  $('#myPercent').text(outcome+"%")
  progress();
  myRecommended();
