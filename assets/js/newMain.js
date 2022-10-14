@@ -133,14 +133,14 @@ var elem = $('#myBar');
 }
 
 var myRecommended = ()=>{
-    if(outcome == 0.00 || outcome== 25.00 || outcome==50.00 || outcome==75.00|| outcome==100.00 ){
+    if(outcome == 0 || outcome== 25 || outcome==50 || outcome==75|| outcome==100 ){
         $('#recommend').text("Data Analyst");
        $('#course1').text('Data mining and warehousing');
         $('#course2').text('Mobile Computing');
        $('#course3').text('Computational Mathematics');
     }
     
-else if(85.00<=outcome<=90.00 ){
+else if(outcome>=85 && outcome<=90 ){
  $('#recommend').text("Software Engineer ");
     $('#course1').text('Embedded systems ');
     $('#course2').text('Software Modeling and Simulation');
@@ -158,26 +158,30 @@ $('#writeUp2').text('A Software Engineer role may be a good fit if you:')
 $('#writeUp2a').text('Love solving real world problems with technology')
 $('#writeUp2b').text('Want to flex both your creative and critical thinking skills')
 $('#writeUp2c').text('Prefer working with prepared data and under specific project guidelines')
-    
-
 }
-    else if(outcome==80.00){
+    else if(outcome==80){
  $('#recommend').text("Games and App Developer ");
        $('#course1').text('Embedded systems ');
         $('#course2').text('Programming 2');
        $('#course3').text('Introduction to computer graphics');
 }
 
-else if(60<= outcome <=69){
+else if(outcome>=60 && outcome<=69){
  $('#recommend').text("Data Scientists");
-       $('#course1').text('Data mining and warehousing');
-        $('#course2').text('Mobile Computing');
-       $('#course3').text('Computational Mathematics');
-              console.log(outcome)
+       $('#course1').text('Introductory Abstract Algebra');
+        $('#course2').text('Introductory Computational mathematics');
+       $('#course3').text('Data Ming and warehousing');
+        $('#writeUp1').text(    `Data Scientists and Machine Learning Engineers often focus on predictive analytics, using data to test hypotheses, train models, and predict uncertain outcomes.
+Data Scientists typically excel in math and statistics, leverage open-source tools and programming languages like Python or R, and often handle large, structured and unstructured data sources. `);
+$('#writeUp2').text('A Data Science or Machine Learning role may be a good fit if you:')
+$('#writeUp2a').text('Love to program and write code')
+$('#writeUp2b').text('Enjoy math and statistics')
+$('#writeUp2c').text('Can distill complex topics and communicate them clearly')
+    
 
 }
 
-else if(55.00<=outcome<=60.00){
+else if(outcome>=55 && outcome <=60){
  $('#recommend').text("Advanced web technologies ");
        $('#course1').text('Embedded systems ');
         $('#course2').text('Mobile computing  ');
@@ -185,6 +189,13 @@ else if(55.00<=outcome<=60.00){
        $('#course4').text('Programming 3');
     $('#option4').show();
 }
+
+
+
+
+
+
+
  else{
         $('#recommend').text("Data Analyst");
        $('#course1').text('Data mining and warehousing');
