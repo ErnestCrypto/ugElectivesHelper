@@ -577,14 +577,16 @@ footer p{
     background-size: cover;
     background-repeat: no-repeat;
     padding:0 !important;
-    
+    animation: fadeIn 2s;
+
  }
 
  .about_cover{
     background:rgba(0,0,0,0.5);
     height:80vh;
-    
      padding:0 !important;
+     animation: fadeIn 2s;
+
  }
 
  .about_content{
@@ -593,19 +595,47 @@ background:white;
  display:flex;
  align-items: center;
  justify-content: center;
-    
- }
-
-
-.about_content{
-color:rgb(107, 105, 105);
- font-weight:600;
+    animation: fadeIn 5s;
      height:50vh;
 
  }
 
+
+.about_content p{
+color:rgb(107, 105, 105);
+ font-weight:600;
+ }
+.team p{
+color:rgb(107, 105, 105);
+ font-weight:600;
+ }
+
 .about2{
     margin: 0 auto;
+}
+.team{
+    padding:4%;
+    
+}
+.team_members{
+display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.members{
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    padding:2%;
+    height:70vh;
+    margin: 2%;
+}
+
+.members img{
+    width:50%;
+}
+
+.members p{
+   color:rgb(107, 105, 105);
+ font-weight:600;
 }
 
 /*about.html*/
