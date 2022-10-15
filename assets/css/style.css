@@ -322,8 +322,8 @@ transition: 0.2s ease-in-out;
 }
 .course:hover{
 background:#c7c4c4;
-transform: translateY(5px)
-
+transform: translateY(5px);
+text-decoration: none;
 }
 
 .course:focus{
