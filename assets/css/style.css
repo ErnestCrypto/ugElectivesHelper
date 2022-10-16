@@ -564,6 +564,7 @@ footer{
     padding:1%;
     color:white;
         margin-top: auto;
+        bottom:0;
 
 }
 
@@ -648,6 +649,7 @@ display: flex;
         padding:5%;
         padding-top:2%;
     height:100vh;
+    overflow: hidden
 }
 .myPosition{
     position: absolute;
@@ -688,6 +690,10 @@ display: flex;
     border-radius: 12px;
     color:white;
     margin-left:2%;
+}
+.contact_button:active{
+     border:none;
+    outline:none;
 }
 
 .form-input{
