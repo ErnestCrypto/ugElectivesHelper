@@ -1,175 +1,79 @@
 <!DOCTYPE html>
-<html lang="en">
+<!-- Created by CodingLab |www.youtube.com/CodingLabYT-->
+<html lang="en" dir="ltr">
+
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <meta name="Description" content="Enter your description here" />
+    <!--<title> Responsive Sidebar Menu  | CodingLab </title>-->
     <link rel="stylesheet" href="assets/css/dashboard.css">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css"
-        integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <!-- Boxicons CDN Link -->
+    <link href='https://unpkg.com/boxicons@2.0.7/css/boxicons.min.css' rel='stylesheet'>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="icon" href="assets/img/logo.png">
-    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
-
     <title>UGElectivesHelper</title>
+    </head>
 </head>
+
 <body>
-<div class="sidebar">
-    <div class="logo_content">
-        <div class="logo">
-<i class='bx bxs-leaf'></i>
-            <div class="logo_name">
-                UGElectives
-            </div>
+    <div class="sidebar">
+        <div class="logo-details">
+<img src="assets/img/logo.png" alt="logo" class="icon">           
+ <div class="logo_name">UGElectivesHelper</div>
+            <i class='bx bx-menu' id="btn"></i>
         </div>
-        <i class='bx bx-menu' id="btn"></i>
-        <ul class="nav_list">
-       
-
-<!--list-->
-<li>
-    <a href="#">
-    <i class='bx bxs-dashboard'></i>
-        <span class="links_name">
-            Dashboard
-        </span>
-    </a>
-    <span class="tool_tip">
-        Dashboard
-    </span>
-</li>
-<!--list-->
-
-<!--list-->
-<li>
-    <a href="#">
-<i class='bx bx-user'></i>
-        <span class="links_name">
-            User
-        </span>
-    </a>
-    <span class="tool_tip"> Dashboard</span>
-</li>
-<!--list-->
-
-<!--list-->
-<li>
-    <a href="#">
-<i class='bx bxs-chat'></i>
-        <span class="links_name">
-            Message
-        </span>
-    </a>
-    <span class="tool_tip"> Dashboard</span>
-
-</li>
-<!--list-->
-
-<!--list-->
-<li>
-    <a href="#">
-<i class='bx bxs-pie-chart-alt-2'></i>
-        <span class="links_name">
-            Analysts
-        </span>
-    </a>
-        <span class="tool_tip"> Dashboard</span>
-
-</li>
-<!--list-->
-
-
-<!--list-->
-<li>
-    <a href="#">
-<i class='bx bx-folder-open'></i>
-        <span class="links_name">
-            File Manager
-        </span>
-    </a>
-    <span class="tool_tip"> Dashboard</span>
-
-</li>
-<!--list-->
-
-
-<!--list-->
-<li>
-    <a href="#">
-<i class='bx bx-cart'></i>
-        <span class="links_name">
-            Order
-        </span>
-    </a>
-        <span class="tool_tip"> Dashboard</span>
-
-</li>
-<!--list-->
-
-<!--list-->
-<li>
-    <a href="#">
-<i class='bx bx-heart'></i>
-        <span class="links_name">
-            Save
-        </span>
-    </a>
-        <span class="tool_tip"> Dashboard</span>
-
-</li>
-<!--list-->
-
-<!--list-->
-<li>
-    <a href="#">
-<i class='bx bx-cog'></i>
-        <span class="links_name">
-            Settings
-        </span>
-    </a>
-    <span class="tool_tip"> Dashboard</span>
-
-</li>
-<!--list-->
+        <ul class="nav-list">
+            <li>
+                <a href="#">
+                    <i class='bx bx-grid-alt'></i>
+                    <span class="links_name">Dashboard</span>
+                </a>
+                <span class="tooltip">Dashboard</span>
+            </li>
+            <li>
+                <a href="#">
+                    <i class='bx bx-user'></i>
+                    <span class="links_name">User</span>
+                </a>
+                <span class="tooltip">User</span>
+            </li>
+            <li>
+                <a href="#">
+                    <i class='bx bx-chat'></i>
+                    <span class="links_name">Messages</span>
+                </a>
+                <span class="tooltip">Messages</span>
+            </li>
+           
+           
+           
+            <li class="profile">
+                <div class="profile-details">
+                    <img src="assets/img/profile-picture-circle-hd.png" alt="profileImg">
+                    <div class="name_job">
+                        <div class="name">Dr. Wiafe</div>
+                        <div class="job">Course Advisor</div>
+                    </div>
+                </div>
+                <i class='bx bx-log-out' id="log_out"></i>
+            </li>
         </ul>
-
-<div class="profile_content">
-    <div class="profile">
-        <div class="profile_details">
-    <img src="./assets/img/images.jpeg" alt=""/> 
-    <div class="name_job">
-        <div class="name">Prem Shahi</div>
-        <div class="job">Web Designer</div>
     </div>
-    </div>
-    <i class='bx bx-log-out' id="log_out"></i>
-    </div>
-</div>
+    <section class="home-section">
+        <div class="text">Dashboard</div>
+    </section>
+    <script src="assets/js/dashboard.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+        integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js"
+        integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js"
+        integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+        crossorigin="anonymous"></script>
 
-
-
-    
-    </div>
-</div>
-
-<!--sidebar-->
-<div class="home_content">
-   <div class="text">home content</div> 
-</div>
-    
 </body>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/js/bootstrap.min.js"></script>
-<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
-    integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
-    crossorigin="anonymous"></script>
-<script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js"
-    integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
-    crossorigin="anonymous"></script>
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js"
-    integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
-    crossorigin="anonymous"></script>
-<script src="assets/js/dashboard.js"></script>
 
 </html>
