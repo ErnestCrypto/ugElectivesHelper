@@ -704,8 +704,8 @@ padding-bottom:8% !important;
 }
 
 .sidebar{
-    flex:1 1 0;
-    max-width: 300px;
+flex:1 1 0;
+max-width: 300px;
 padding: 2rem 1rem;
 background:#281564;
 
@@ -718,17 +718,17 @@ background:#281564;
 .sidebar .Mymenu .Mymenu-item{
     display:block;
     padding:1rem;
-    color:white;
+    color:rgb(255, 255, 255);
     text-decoration:none;
     transition:0.2s linear;
 }
 
 .sidebar .Mymenu .Mymenu-item:hover,
-.sidebar .Mymenu .Mymenu-item:hover{
+.sidebar .Mymenu .Mymenu-item:active{
+    background:white;
     color:#281564;
-    border-right: 5px solid rgb(66, 120, 179);
-        text-decoration:none;
-
+    border-radius: 10px;
+    text-decoration:none;
 }
 
 .myContent{
