@@ -721,14 +721,21 @@ background:#281564;
     color:rgb(255, 255, 255);
     text-decoration:none;
     transition:0.2s linear;
+    font-weight: 600;
 }
 
 .sidebar .Mymenu .Mymenu-item:hover,
 .sidebar .Mymenu .Mymenu-item:active{
     background:white;
-    color:#281564;
+    color:#281564 !important;
     border-radius: 10px;
     text-decoration:none;
+}
+.sidebar h3{
+    color:white;
+}
+.Mymenu-item:hover{
+    color:#281564
 }
 
 .myContent{
@@ -818,6 +825,16 @@ transition: 0.5s linear;
 
 .sidebar.is-active{
     left:0;
+}
+
+.sidebar .Mymenu .Mymenu-item{
+    display:block;
+    padding:1rem;
+    color:rgb(255, 255, 255);
+    text-decoration:none;
+    transition:0.2s linear;
+    font-weight: 600;
+
 }
 
 /*dashboard.html*/
