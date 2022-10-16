@@ -74,6 +74,9 @@
   margin: 8px 0;
   list-style: none;
 }
+
+
+
 .sidebar li .tooltip{
   position: absolute;
   top: -20px;
@@ -134,6 +137,7 @@
   background: #FFF;
   color: #11101d;
 }
+
 .sidebar li a{
   display: flex;
   height: 100%;
@@ -244,6 +248,68 @@
   font-weight: 500;
   margin: 18px
 }
+
+hr{
+  margin: 0 auto;
+  width: 98%;
+  opacity:0.3;
+}
+
+.message_content{
+box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+  height:20%;
+  margin:0 auto;
+  width: 95%;
+  padding:1%;
+  border-radius: 12px;
+  transition: all 0.5s ease;
+
+}
+.message_content:hover{
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+
+}
+
+.message_content img{
+  width:80%;
+  margin:0%;
+  border-radius: 34px;
+}
+
+
+.message_content p{
+  font-size: 12px;
+    margin: 0%;
+
+}
+
+.message_content a{
+  font-size: 12px;
+  margin: 0%;
+}
+
+.pic{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.time{
+   display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.time p{
+  margin:0%;
+  font-size: 12px;
+  color:rgba(0, 0, 0, 0.2);
+  font-weight: 700;
+
+}
+
+
+
+
 @media (max-width: 420px) {
   .sidebar li .tooltip{
     display: none;
