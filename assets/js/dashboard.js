@@ -1,6 +1,5 @@
 let sidebar = document.querySelector(".sidebar");
         let closeBtn = document.querySelector("#btn");
-        let dashboard = document.querySelector(".bx-grid-alt");
 
         closeBtn.addEventListener("click", () => {
             sidebar.classList.toggle("open");
@@ -8,11 +7,7 @@ let sidebar = document.querySelector(".sidebar");
             
         });
 
-        dashboard.addEventListener("click", () => { 
-            sidebar.classList.toggle("open");
-            menuBtnChange(); 
-            
-        });
+      
 
         function menuBtnChange() {
             if (sidebar.classList.contains("open")) {
