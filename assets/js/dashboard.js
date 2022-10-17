@@ -62,11 +62,6 @@ fetch('https://script.google.com/macros/s/AKfycbyik6zXdy9dvdsuw-GDJ0ThPoe_sOsy5y
                  console.log(arr);
 
      }
-// $('#messagesName').text(arr[0]);
-//      $('#messagesContent').text(arr[2]);
-
-
-
 })
 }
 
