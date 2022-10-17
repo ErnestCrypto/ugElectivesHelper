@@ -42,7 +42,7 @@ fetch('https://script.google.com/macros/s/AKfycbyik6zXdy9dvdsuw-GDJ0ThPoe_sOsy5y
     let index = data.content.length - 1
      
 
-     for(i = 1; i<data.content.length;i++){
+     for(i = data.content.length-1; i>=1;i--){
             let arr = data.content[i]
        $(` <div class="message_content">
 <div class="row">
@@ -54,7 +54,7 @@ fetch('https://script.google.com/macros/s/AKfycbyik6zXdy9dvdsuw-GDJ0ThPoe_sOsy5y
         <p id = "messagesContent">${arr[2]}</p>
     </div>
     <div class="col-sm-1 time ">
-        <p class="col-sm-12" id = "reply">reply</p>
+        <a  class="col-sm-12" id = "reply" >reply</a>
        
     </div>
 </div>
