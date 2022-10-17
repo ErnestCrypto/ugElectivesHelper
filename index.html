@@ -36,7 +36,7 @@
             <!--end option-->
 
 <!--INPUT FIELDS-->
-<form   action="home.html" name="studentLogin" >
+<form name="studentLogin"  >
 <div class="myCenter" id="myCenter1">
  <div class="col-sm-12 field_container">
     <div class="col-sm-12 field">
@@ -49,7 +49,10 @@
     </div>
     <div class="col-sm-12 login_container">
  <div class="col-sm-8 text-center login">
-   <button type = "submit">Login</button>
+   <button type = "submit" >Login
+    <div class="lds-spinner"><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div></div>
+
+   </button>
     </div>
     </div>
     </div>
@@ -59,20 +62,23 @@
 
     
 <!--INPUT FIELDS-->
-<form  action="dashboard.html"   name="staffLogin">
+<form   name="staffLogin">
 <div class="myCenter2" id="myCenter2">
  <div class="col-sm-12 field_container">
     <div class="col-sm-12 field">
         <label class="col-sm-12">Staff ID</label>
-    <input type="text" class = "form-control " name="id" id = "id" required />
+    <input type="text" class = "form-control " name="staff_id" id = "staff_id" required />
     </div>
      <div class="col-sm-12 field">
         <label class="col-sm-12">PIN</label>
-    <input type="password" class = "form-control" name="pin" id="pin" required/>
+    <input type="password" class = "form-control" name="staff_pin" id="staff_pin" required/>
     </div>
      <div class="col-sm-12 login_container">
  <div class="col-sm-8 text-center login">
-<button type = "submit">Login</button>
+<button type = "submit">Login
+    <div class="lds-spinner"><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div></div>
+
+</button>
     </div>
     </div>
     </div>
@@ -90,7 +96,6 @@
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/js/bootstrap.min.js"></script>
 <script src="assets/js/main.js"></script>
-g
 
 <script>
 
@@ -141,16 +146,26 @@ if (myCenter2.style.display === "none") {
 
 
 <script>
+$('.lds-spinner').hide();
+
   const script_url = 'https://script.google.com/macros/s/AKfycbw2Wxjgd_iwoYJNckpWoPZpO3W3OIGWjiwhsVfcn0zM6zW9GCBd4H82jzmguuwc7Cbo/exec'
   const studentLogin = document.forms['studentLogin']
 
   studentLogin.addEventListener('submit', e => {
     e.preventDefault()
+             $('.lds-spinner').show();
     fetch(script_url, { method: 'POST', body: new FormData(studentLogin)})
-       .then(response => console.log('Success!', response))
+       .then(function(){
+        response => console.log('Success!', response);
+        $('.lds-spinner').hide();
+        window.location.replace("home.html")
+
+       })
       .catch(error => console.error('Error!', error.message))
-      studentLogin.submit()
+    
   })
+  
+ 
   
 </script>
 
@@ -160,8 +175,16 @@ if (myCenter2.style.display === "none") {
 
   staffLogin.addEventListener('submit', e => {
     e.preventDefault()
+     $('.lds-spinner').show();
     fetch(scriptURL, { method: 'POST', body: new FormData(staffLogin)})
-       .then(response => console.log('Success!', response),  staffLogin.submit())
+       .then(function(){
+        response => console.log('Success!', response);
+               $('.lds-spinner').hide();
+
+        window.location.replace("dashboard.html")
+
+       })
+       
       .catch(error => console.error('Error!', error.message))
     
   })

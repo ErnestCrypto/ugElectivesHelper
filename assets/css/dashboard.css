@@ -260,9 +260,9 @@ box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
   height:20%;
   margin:0 auto;
   width: 95%;
-  padding:1%;
   border-radius: 12px;
   transition: all 0.5s ease;
+  padding:5px;
 
 }
 .message_content:hover{
@@ -278,7 +278,8 @@ box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
 
 
 .message_content p{
-  font-size: 12px;
+  font-size: 15px;
+  font-weight: bold;
     margin: 0%;
 
 }
