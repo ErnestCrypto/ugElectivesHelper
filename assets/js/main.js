@@ -222,9 +222,23 @@ $('#writeUp2c').text('Prefer working with prepared data and under specific proje
 
 
 
+//fetch api 
+fetch('https://sheet.best/api/sheets/e1b3eaee-41e1-48cf-9c67-d07bed24b97f')
+.then(response => response.json())
+.then(data  => {
+if(data.length > 0){
+    var temp='';
+    u = data[data.length -1 ]
+    temp +=  u.id ;
+  
+    $('#myID').text(temp);
+}
 
 
 
+    console.log(data[data.length -1 ])
+}
+    )
 
 
 
