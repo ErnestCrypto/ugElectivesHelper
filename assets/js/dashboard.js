@@ -39,9 +39,8 @@ function messagesFetch(){
 fetch('https://script.google.com/macros/s/AKfycbyik6zXdy9dvdsuw-GDJ0ThPoe_sOsy5yxeZN5qw6xw1yid9cyjH_xCalhHJOjwZSRH/exec')
 .then(response => response.json())
 .then(data  => {
-    let index = data.content.length - 1
-     
-
+    
+    index = data.content.length - 1
      for(i = data.content.length-1; i>=1;i--){
             let arr = data.content[i]
        $(` <div class="message_content">
@@ -54,21 +53,34 @@ fetch('https://script.google.com/macros/s/AKfycbyik6zXdy9dvdsuw-GDJ0ThPoe_sOsy5y
         <p id = "messagesContent">${arr[2]}</p>
     </div>
     <div class="col-sm-1 time ">
-        <a  class="col-sm-12" id = "reply" >reply</a>
-       
+<a class="col-sm-12 reply"  href ="mailto:${arr[1]}" >reply</a>
     </div>
 </div>
             </div>`).appendTo('.message_container');
-                 console.log(arr);
 
-     }
+        
+     }  
+      counters()
 })
+
 }
 
 messagesFetch()
+function counters(){
 
-  for(x=0; x<9;x++) {
-            var board = document.createElement('div');
-            board.className = "blah";
-            document.getElementById('board').appendChild(board);
-            }
+for(i=index;i>=1;i--){
+    btn = document.getElementById("reply"+i);
+    console.log(i)
+}
+
+
+}
+
+// $('.message_container').on('click','.reply',()=>{
+// console.log($('.reply').val())
+// })
+
+
+
+
+

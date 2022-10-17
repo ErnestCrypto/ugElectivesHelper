@@ -305,8 +305,30 @@ hr{
 
 }
 
-
-
+.reply{
+  outline: none;
+  border: none;
+  background: none;
+  color:#2fbde9;
+}
+.reply:hover{
+  outline: none;
+  border: none;
+  background: none;
+  color:#2f51e9;
+}
+.reply:active{
+  outline: none;
+  border: none;
+  background: none;
+  color:#2f51e9;
+}
+.reply:focus{
+  outline: none;
+  border: none;
+  background: none;
+  color:#2f51e9;
+}
 
 @media (max-width: 420px) {
   .sidebar li .tooltip{
