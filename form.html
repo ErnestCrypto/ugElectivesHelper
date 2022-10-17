@@ -83,7 +83,9 @@
               <textarea  class="form-control form-input" name="message" placeholder="Message..." id="message" rows="5" required ></textarea>
             </div>
               <div class="col-sm-12 ">
-           <button class="contact_button" type="sumbit">send</button>
+           <button class="contact_button" type="sumbit">send
+
+           </button>
           </div>
         </div>
         </form>
@@ -122,13 +124,16 @@
 <script src="assets/js/main.js"></script>
 <script src="https://code.jquery.com/jquery-3.6.1.min.js" ></script>
 <script>
+
   const scriptURL = 'https://script.google.com/macros/s/AKfycbyR9hrH8Suclr8_Ic28F05VsCO_ACuq-FkmQk_Nve_JjZ0Y4zHGlW6rtBU5LQK646VH/exec'
   const form = document.forms['google-sheet']
 
   form.addEventListener('submit', e => {
     e.preventDefault()
     fetch(scriptURL, { method: 'POST', body: new FormData(form)})
-      .then(response => $('#form_alerts').html("<div class ='alert alert-success'>Contact message sent successfully.</div>"))
+      .then(response => $('#form_alerts').html("<div class ='alert alert-success'>Contact message sent successfully.</div>")
+
+      )
       .catch(error => $('#form_alerts').html("<div class ='alert alert-danger'>An error is keeping us from sending your message.</div>"))
   })
 </script>

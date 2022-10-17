@@ -777,7 +777,7 @@ display: flex;
     color:white;
     margin-left:2%;
 }
-.contact_button:active{
+.contact_button:focus{
      border:none;
     outline:none;
 }

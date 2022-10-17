@@ -256,17 +256,12 @@ hr{
 }
 
 .message_content{
-box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
   height:20%;
   margin:0 auto;
   width: 95%;
-  border-radius: 12px;
   transition: all 0.5s ease;
-  padding:5px;
-
-}
-.message_content:hover{
-  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+  padding:15px;
+  border-bottom: 1px solid rgba(0,0,0,0.1);
 
 }
 
@@ -278,15 +273,16 @@ box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
 
 
 .message_content p{
-  font-size: 15px;
+  font-size: 12px;
   font-weight: bold;
     margin: 0%;
 
 }
 
-.message_content a{
-  font-size: 12px;
-  margin: 0%;
+.message_content #messagesContent{
+  font-size: 15px;
+    font-weight: 300;
+ 
 }
 
 .pic{

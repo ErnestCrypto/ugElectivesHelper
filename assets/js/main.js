@@ -26,6 +26,8 @@ let answers = questions.map( _ => null)
 let current_index = 0
  $('#previousButton').hide()
 $('#myResult').hide()
+    $('.lds-spinner').hide();
+
 
 
 
@@ -223,22 +225,16 @@ $('#writeUp2c').text('Prefer working with prepared data and under specific proje
 
 
 //fetch api 
-fetch('https://sheet.best/api/sheets/e1b3eaee-41e1-48cf-9c67-d07bed24b97f')
+fetch('https://script.google.com/macros/s/AKfycbzUdT99c8Q-3Tm_dxB8OOqJli7niD_AldxjphaZHyGJEHumkY5fbUfx24NTOEJzDIVx/exec')
 .then(response => response.json())
 .then(data  => {
-if(data.length > 0){
-    var temp='';
-    u = data[data.length -1 ]
-    temp +=  u.id ;
-  
-    $('#myID').text(temp);
-}
+    let index = data.content.length - 1
+    let arr = data.content[index]
+     $('#myID').text(arr[0]);
+})
 
 
-
-    console.log(data[data.length -1 ])
-}
-    )
+ 
 
 
 
