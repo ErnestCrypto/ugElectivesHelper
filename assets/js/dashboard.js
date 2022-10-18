@@ -60,21 +60,12 @@ fetch('https://script.google.com/macros/s/AKfycbyik6zXdy9dvdsuw-GDJ0ThPoe_sOsy5y
 
         
      }  
-      counters()
 })
 
 }
 
 messagesFetch()
-function counters(){
 
-for(i=index;i>=1;i--){
-    btn = document.getElementById("reply"+i);
-    console.log(i)
-}
-
-
-}
 
 // $('.message_container').on('click','.reply',()=>{
 // console.log($('.reply').val())
