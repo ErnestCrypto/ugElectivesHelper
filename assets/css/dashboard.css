@@ -356,7 +356,7 @@ hr{
 
 .explore{
 text-decoration: none;
-background-image: linear-gradient(to right, red,#281564);
+background:#E93554;
 padding:2%;
 border-radius: 21px;
 color:white;
@@ -366,7 +366,7 @@ transition: all 0.5s ease;
 
 .explore:hover{
 text-decoration: none;
-background-image: linear-gradient(to right, red,#281564);
+background:#E93554;
 color:white;
 
 }
@@ -401,7 +401,7 @@ background-color:#F2C517;
 .c_content{
   padding:2%;
   border-radius:10px;
-  background:#2EAAA2;
+background:#E93554;
   color:white;
     margin:2%;
 
