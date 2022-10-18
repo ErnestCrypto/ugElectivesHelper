@@ -356,7 +356,7 @@ hr{
 
 .explore{
 text-decoration: none;
-background:#11101D;
+background-image: linear-gradient(to right, red,#281564);
 padding:2%;
 border-radius: 21px;
 color:white;
@@ -370,6 +370,59 @@ background-image: linear-gradient(to right, red,#281564);
 color:white;
 
 }
+
+.content_items{
+  display: flex;
+  align-items: center;
+  justify-content:center;
+}
+
+.a_content{
+  padding:2%;
+  border-radius:10px;
+  background:#7D41D7;
+  color:white;
+  margin:2%;
+}
+
+
+
+.b_content{
+  padding:2%;
+  border-radius:10px;
+background-color:#F2C517;
+  color:white;
+    margin:2%;
+
+}
+
+
+
+.c_content{
+  padding:2%;
+  border-radius:10px;
+  background:#2EAAA2;
+  color:white;
+    margin:2%;
+
+}
+
+
+.a_img{
+width:100%;
+padding:2%;
+margin:2%;
+border-radius:10px;
+
+}
+.c_img{
+width:80%;
+padding:2%;
+margin:2%;
+border-radius:10px;
+
+}
+
 
 
 @media (max-width: 420px) {
