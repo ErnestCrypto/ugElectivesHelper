@@ -1,4 +1,8 @@
 let sidebar = document.querySelector(".sidebar");
+let spinner = document.querySelector('.lds-dual-ring');
+
+spinner.style.display = 'none';
+
         let closeBtn = document.querySelector("#btn");
 
         closeBtn.addEventListener("click", () => {
@@ -36,10 +40,13 @@ myFetch();
 
 
 function messagesFetch(){
+    spinner.style.display = 'flex';
+
 fetch('https://script.google.com/macros/s/AKfycbyik6zXdy9dvdsuw-GDJ0ThPoe_sOsy5yxeZN5qw6xw1yid9cyjH_xCalhHJOjwZSRH/exec')
 .then(response => response.json())
 .then(data  => {
-    
+    spinner.style.display = 'none';
+
     index = data.content.length - 1
      for(i = data.content.length-1; i>=1;i--){
             let arr = data.content[i]

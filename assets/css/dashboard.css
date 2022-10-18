@@ -383,7 +383,7 @@ color:white;
   background:#7D41D7;
   color:white;
   margin:2%;
-}
+box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;}
 
 
 
@@ -393,7 +393,7 @@ color:white;
 background-color:#F2C517;
   color:white;
     margin:2%;
-
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
 }
 
 
@@ -404,7 +404,7 @@ background-color:#F2C517;
 background:#E93554;
   color:white;
     margin:2%;
-
+box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
 }
 
 
@@ -425,8 +425,57 @@ border-radius:10px;
 
 
 
+
+/*spinner*/
+.lds-dual-ring {
+  position:absolute;
+ left:40%;
+ top:20%;
+  width: 80px;
+  height: 80px;
+}
+.lds-dual-ring:after {
+  content: " ";
+  display: block;
+  width: 64px;
+  height: 64px;
+  margin: 8px;
+  border-radius: 50%;
+  border: 6px solid rgb(218, 47, 47);
+  border-color: rgb(209, 45, 45) transparent rgb(209, 49, 49) transparent;
+  animation: lds-dual-ring 1.2s linear infinite;
+}
+@keyframes lds-dual-ring {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+
+
+
+
 @media (max-width: 420px) {
   .sidebar li .tooltip{
     display: none;
   }
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
