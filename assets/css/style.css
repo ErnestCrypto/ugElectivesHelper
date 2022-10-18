@@ -731,6 +731,9 @@ display: flex;
 /*about.html*/
 
 /*contact.html*/
+#myID{
+    margin:2%;
+}
 .contact{
         padding:5%;
         padding-top:2%;
