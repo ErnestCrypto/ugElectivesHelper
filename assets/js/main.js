@@ -183,14 +183,7 @@ $('#writeUp2c').text('Can distill complex topics and communicate them clearly')
 
 }
 
-else if(outcome>=55 && outcome <=60){
- $('#recommend').text("Advanced web technologies ");
-       $('#course1').text('Embedded systems ');
-        $('#course2').text('Mobile computing  ');
-       $('#course3').text('Programming 2');
-       $('#course4').text('Programming 3');
-    $('#option4').show();
-}
+
 
 else if(outcome>=70 && outcome<=79 ){
  $('#recommend').text("Data Visualization Specialists ");
