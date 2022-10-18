@@ -346,6 +346,7 @@ hr{
  display: flex;
  align-items: center;
  justify-content: right;
+ margin-left:1%;
 }
 
 .d_pic{

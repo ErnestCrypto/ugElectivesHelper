@@ -1,7 +1,4 @@
 let sidebar = document.querySelector(".sidebar");
-let spinner = document.querySelector('.lds-dual-ring');
-
-spinner.style.display = 'none';
 
         let closeBtn = document.querySelector("#btn");
 
@@ -37,41 +34,6 @@ fetch('https://script.google.com/macros/s/AKfycbxFFRClszD6kDkemH0rZ2yiuQw-k8KMYA
 myFetch();
 
 
-
-
-function messagesFetch(){
-    spinner.style.display = 'flex';
-
-fetch('https://script.google.com/macros/s/AKfycbyik6zXdy9dvdsuw-GDJ0ThPoe_sOsy5yxeZN5qw6xw1yid9cyjH_xCalhHJOjwZSRH/exec')
-.then(response => response.json())
-.then(data  => {
-    spinner.style.display = 'none';
-
-    index = data.content.length - 1
-     for(i = data.content.length-1; i>=1;i--){
-            let arr = data.content[i]
-       $(` <div class="message_content">
-<div class="row">
-    <div class="col-sm-1 text-center pic ">
-        <img src="assets/img/profile-picture-circle-hd.png" alt="pic">
-    </div>
-    <div class="col-sm-10 ">
-        <p id = "messagesName" >${arr[0]}</p>
-        <p id = "messagesContent">${arr[2]}</p>
-    </div>
-    <div class="col-sm-1 time ">
-<a class="col-sm-12 reply"  href ="mailto:${arr[1]}" >reply</a>
-    </div>
-</div>
-            </div>`).appendTo('.message_container');
-
-        
-     }  
-})
-
-}
-
-messagesFetch()
 
 
 // $('.message_container').on('click','.reply',()=>{
