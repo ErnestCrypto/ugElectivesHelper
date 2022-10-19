@@ -1095,10 +1095,18 @@ opacity:0.2;
     position: absolute;
 
 }
-
+#nextButtonstarted{
+    width: 100% !important;
+}
 /*home.html*/
 
-
+/*question.html*/
+.answers input[type=radio] {
+    border: 0px;
+    width: 100%;
+    height: 1em;
+}
+/*question.html*/
 
 
 }
