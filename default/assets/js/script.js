@@ -228,3 +228,14 @@ function toggleFullScreen() {
     }
 }
 
+function myFetch(){
+fetch('https://script.google.com/macros/s/AKfycbxFFRClszD6kDkemH0rZ2yiuQw-k8KMYAcbCGnXi9xiaSlBMRALrwKWxGcgZIi6B4Jb/exec')
+.then(response => response.json())
+.then(data  => {
+    let index = data.content.length - 1
+    let arr = data.content[index]
+     $('.name').text(arr[0]);
+})
+}
+
+myFetch();
