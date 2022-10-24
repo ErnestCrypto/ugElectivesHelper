@@ -138,8 +138,15 @@ var myRecommended = ()=>{
     if(outcome == 0 || outcome== 25 || outcome==50 || outcome==75|| outcome==100 ){
         $('#recommend').text("Data Analyst");
        $('#course1').text('Data mining and warehousing');
-        $('#course2').text('Mobile Computing');
+        $('#course2').text('Data Structures and Algorithm');
        $('#course3').text('Computational Mathematics');
+       $('#writeUp1').text(    `Data Analyst often times focus on predictive analytics, using data to test hypotheses, train models, and predict uncertain outcomes.
+Data Analyst typically excel in math and statistics, leverage open-source tools and programming languages like Python or R, and often handle large, structured and unstructured data sources.
+`);
+$('#writeUp2').text('A Data Analyst role may be a good fit if you:')
+$('#writeUp2a').text('Love to program and write code')
+$('#writeUp2b').text('Enjoy math and statistics')
+$('#writeUp2c').text('Can distill complex topics and communicate them clearly')
     }
     
 else if(outcome>=85 && outcome<=90 ){
@@ -191,11 +198,8 @@ else if(outcome>=70 && outcome<=79 ){
     $('#course2').text('Introductory Abstract Algebra');
     $('#course3').text('Introductory Computational mathematics');
 $('#writeUp1').text(    `Data Visualization Specialists possess a unique and powerful ability to give data a voice.
-They use visual design and storytelling to 
-bridge the gap between analysts and business 
-leaders, translating raw data into clear and compelling insights. 
-Data Visualization Specialists typically play a specialized role, 
-focusing more on analysis and visualization than data engineering. `);
+They use visual design and storytelling to bridge the gap between analysts and business leaders, translating raw data into clear and compelling insights. 
+Data Visualization Specialists typically play a specialized role, focusing more on analysis and visualization than data engineering. `);
 $('#writeUp2').text('A Data Visualization Specialist role may be a good fit if you:')
 $('#writeUp2a').text('Love designing visuals to tell stories and bring data to life')
 $('#writeUp2b').text('Prefer working with prepared data and under specific project guidelines')
@@ -206,8 +210,16 @@ $('#writeUp2c').text('Prefer working with prepared data and under specific proje
  else{
         $('#recommend').text("Data Analyst");
        $('#course1').text('Data mining and warehousing');
-        $('#course2').text('Mobile Computing');
+        $('#course2').text('Data Structures and Algorithm');
        $('#course3').text('Computational Mathematics');
+       $('#writeUp1').text(    `Data Analyst often times focus on predictive analytics, using data to test hypotheses, train models, and predict uncertain outcomes.
+
+Data Analyst typically excel in math and statistics, leverage open-source tools and programming languages like Python or R, and often handle large, structured and unstructured data sources.
+`);
+$('#writeUp2').text('A Data Analyst role may be a good fit if you:')
+$('#writeUp2a').text('Love to program and write code')
+$('#writeUp2b').text('Enjoy math and statistics')
+$('#writeUp2c').text('Can distill complex topics and communicate them clearly')
     }
 
 }
