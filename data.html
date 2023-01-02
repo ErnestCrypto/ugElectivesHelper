@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta http-equiv="X-UA-Compatible" content="ie=edge">
+<meta name="Description" content="Enter your description here"/>
+<link rel="stylesheet" href="assets/css/style.css">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+<link rel="icon" href="assets/img/logo.png">
+<title>UGElectivesHelper</title></head>
+<body>
+<!--start nav-->
+<nav class="navbar navbar-expand-lg navbar-light ">
+    <div class = "col-sm-3 ">
+        <div class="row ">
+        <div class="col-sm-2 no_margin ">
+<img src="assets/img/logo.png" alt="logo"/>
+        </div>
+    <div class="col-sm-10 text-center titleGhana ">
+  <a class="navbar-brand nav_title" href="#" >UNIVEERSITY OF GHANA</a>
+  <pre style = "color:white;font-size:8px;margin:0%;letter-spacing:3px;text-transform:uppercase;font-weight:bold;">electives selection helper</pre>
+</div>
+  <button type="button" class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button> 
+    </div>
+    </div>
+   
+
+  <div class="collapse navbar-collapse" id="navbarSupportedContent">
+    <ul class="navbar-nav mr-auto">
+      <li class="nav-item active">
+        <a class="nav-link nav_item" href="home.html">HOME</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link nav_item" href="about.html">ABOUT</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link nav_item" href="contact.html">CONTACT US</a>
+      </li>
+    </ul>
+  </div>
+</nav>
+<!--end nav-->
+<div class="profile col-sm-12 bg-light">
+  <div class="col-sm-6">
+    <div class="row">
+      <img src="./assets/img/profile-picture-circle-hd.png" alt="profile" />
+      <div class="col-sm-6 myName">
+        <p id="myID"></p>
+              <a href="index.html">logout</a>
+
+      </div>
+    </div>
+  </div>
+</div>
+
+
+
+
+<div class="parent">
+
+  <form action="#" method="get" id="myForm">
+<!-- start main body-->
+<div class="main_body" id="q3">
+  <div class="main_content">
+    <div class="col-sm-12 text-center qustionLabel">
+    <h3>DATA ANALYST</h3>
+      <p id="outof"></p>
+    </div>
+    <div class="col-sm-12 text-center qustionBody">
+      <p id="questionbox">I am interested in working with very large or complex datasets, including unstructured (non-tabular) data</p>
+    </div>
+    <div class="col-sm-10 answers">
+
+      <div class="row">
+        <div class="col-sm-2 text-center">
+          <input type="radio" name="question" class="question" value="0" />
+          <p>Strongly Disagree</p>
+        </div>
+        <div class="col-sm-3 text-center">
+          <input type="radio" name="question" class="question" value="25" />
+          <p>Disagree</p>
+        </div>
+        <div class="col-sm-2 text-center">
+          <input type="radio" name="question" class="question" value="50" />
+          <p>Neutral</p>
+        </div>
+        <div class="col-sm-3 text-center">
+          <input type="radio" name="question" class="question" value="75" />
+          <p>Agree</p>
+        </div>
+        <div class="col-sm-2 text-center">
+          <input type="radio" name="question" class="question" value="100" />
+          <p> Strongly Agree</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="col-sm-12 next">
+      <button type="button" id="previousButton" class="col-sm-2"><i class="fa fa-arrow-left" aria-hidden="true"
+          style="font-size:12px;"></i> Previous</button>
+
+      <button type="button" id="nextButton" class="col-sm-2" name="question1" disabled>Next <i class="fa fa-arrow-right"
+          aria-hidden="true" style="font-size:12px;"></i></button>
+
+    </div>
+
+
+  </div>
+
+</div>
+<!-- end main body-->
+
+</form>
+
+
+
+
+<!-- start main body-->
+<div class="main_body" id="myResult">
+  <div class="main_content">
+    <div class="col-sm-12 text-center qustionLabel">
+      <p>YOUR RECOMMENDED CAREER PATH</p>
+    </div>
+    <div class="col-sm-12 text-center qustionBody">
+      <p id="recommend">
+      </p>
+    </div>
+    <div class="col-sm-12 text-center">
+      <p style="color:#6E6E6E;font-weight:600;margin:0%">Career Match Score
+      <p id="myPercent" style="color:#6E6E6E;font-weight:600;margin:0%">
+        0%</p>
+      </p>
+    </div>
+    <div id="myProgress">
+      <div id="myBar"></div>
+    </div>
+
+    <br>
+    <div class="col-sm-12">
+      <div class="">
+        <div class="col-sm-12">
+          <center><h6 id="writeUp1"></h6></center>
+         
+         
+        </div>
+      
+          <br>
+          <div class="col-sm-12">
+            <button type="button" id="restart" style="padding: 12px;"> <i class="fa fa-retweet"></i> Restart</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  
+
+
+
+</div>
+</div>
+
+<!-- end main body-->
+
+
+
+
+
+
+
+</div>
+<!--start footer-->
+<footer class ="col-sm-12">
+    <div class = "col-sm-12">
+        <div class ="row">
+            <div class = "col-sm-8">
+<p >© UG ELECTIVES SELECTION HELPER | All Rights Reserved<p>
+    </div>
+     <div class = "col-sm-4">
+    <div class ="row">
+<p class = "col-sm-4">Terms & Conditions</p>
+ <p class = "col-sm-2">Privacy</p>
+<p class = "col-sm-4">Community Forum Policy</p>
+<p class = "col-sm-2">Contact</p>
+</div>
+
+    </div>
+
+    </div>
+    </div>
+</footer>
+<!--end footer-->
+
+
+
+
+
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/js/bootstrap.min.js"></script>
+<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQsmfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+<script src="assets/js/main-data.js"></script>
+
+</body>
+</html>

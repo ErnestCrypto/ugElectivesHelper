@@ -1,26 +1,26 @@
 $(function(){
    
 const questions = [
-    "1. Interpreting data, analyzing results using statistical techniques  are some of the duties and responsibilities of a data analyst.",
-    "2. One of the process you follow when cleaning data is  making corrections to the data.",
-    "3. Are you familier with SPSS or have you ever heard of it.",
-    "4. Data Type Check is a data visualization method.",
-    "5. To conduct exploratory data analysis, data needs to be collected.",
-    "6. I am very good at communicating",
-    "7. When you miss a deadline your first instinct is to provide a brief explanation.",
-    "8. Every organization needs protection against cyber attacks and security threats.",
-    "9. Ransomware is considered to be one of the biggest cyber security threats in 2022 and poses a serious cyber threat to businesses of all sizes.",
-    "10. Accurately identify all personal data under their control is a compliance obligation regarding sensitive data.",
-    "11. You have the ability to think like a hacker.",
-    "12. You  have good problem solving skills.",
-    "13. Is the impression a product give important to you?",
-    "14. When you look at a product you think about its functions?",
-    "15. Making it comfortable to interact with a product is important in UI/UX design.",
-    "16. You a familiar with the design process",
-    "17. Atomization designs are a big part of UI/UX",
-    "18. Figma is a designing software.",
-    "19. In UI/UX user experience is very important",
-    "20. UI/UX designers are more intersted in the amount of money they are paid and not the product.",
+    " Interpreting data, analyzing results using statistical techniques  are some of the duties and responsibilities of a data analyst.",
+    " One of the process you follow when cleaning data is  making corrections to the data.",
+    " Are you familier with SPSS or have you ever heard of it.",
+    " Data Type Check is a data visualization method.",
+    " To conduct exploratory data analysis, data needs to be collected.",
+    " I am very good at communicating",
+    " When you miss a deadline your first instinct is to provide a brief explanation.",
+    " Every organization needs protection against cyber attacks and security threats.",
+    " Ransomware is considered to be one of the biggest cyber security threats in 2022 and poses a serious cyber threat to businesses of all sizes.",
+    " Accurately identify all personal data under their control is a compliance obligation regarding sensitive data.",
+    " You have the ability to think like a hacker.",
+    "You  have good problem solving skills.",
+    " Is the impression a product give important to you?",
+    " When you look at a product you think about its functions?",
+    " Making it comfortable to interact with a product is important in UI/UX design.",
+    " You a familiar with the design process",
+    " Atomization designs are a big part of UI/UX",
+    " Figma is a designing software.",
+    " In UI/UX user experience is very important",
+    " UI/UX designers are more intersted in the amount of money they are paid and not the product.",
 ]
 let answers = questions.map( _ => null)
 let current_index = 0
@@ -137,15 +137,10 @@ var myRecommended = ()=>{
     $('#course1').text('Embedded systems ');
     $('#course2').text('Software Modeling and Simulation');
     $('#course3').text('Mobile Computing');
-$('#writeUp1').text(    `Cybersecurity engineering requires an in-depth study of software design 
-and implementation using a modern, object-oriented language with support for graphical user 
-interfaces and complex data structures. Topics covered will be specifications, design patterns, and abstraction techniques, including typing,
- access control, inheritance, and polymorphism. Students will learn the proper engineering use of techniques such as information hiding, classes, 
-objects, inheritance, exception handling, event-based systems, and concurrency. This course equips students with practical set of skills for the 
-development of software. The software crisis; why software fail (case studies);  Design as modeling; The Unified Modeling Language, Concepts and 
-techniques for testing and modifying software in evolving environments. Topics include software testing at the unit, module, subsystem, and system levels; 
-developer testing; automatic and manual techniques for generating test data; testing concurrent and distributed software; designing and implementing 
-software to increase maintainability and reuse; evaluating software for change; and validating software changes. `);
+$('#writeUp1').text(    `Cyber security professionals, or information security analysts, have a wide range of responsibilities, but the crux of their job is to protect online data from being compromised.
+ As more of our personal information is stored online, the more important it becomes to step up security.the more important it becomes to step up security.
+Cyber security is a complex field, and many roles can be found within banks, retailers, e-tailers, healthcare, and government organizations. On the job, you can expect to safeguard an organization's files and network, install firewalls, create security plans, guard customer data, and monitor activity. 
+If a breach occurs, you'll be responsible for identifying the problem and finding a solution quickly. `);
 $('#writeUp2').text('A Cybersecurity Engineer role may be a good fit if you:')
 $('#writeUp2a').text('Love solving real world problems with technology')
 $('#writeUp2b').text('Want to flex both your creative and critical thinking skills')
@@ -174,9 +169,8 @@ else if(outcome>=61 && outcome<=100 ){
     $('#course1').text('Data Mining and Warehousing');
     $('#course2').text('Introductory Abstract Algebra');
     $('#course3').text('Introductory Computational mathematics');
-$('#writeUp1').text(    `Data Visualization Specialists possess a unique and powerful ability to give data a voice.
-They use visual design and storytelling to bridge the gap between analysts and business leaders, translating raw data into clear and compelling insights. 
-Data Visualization Specialists typically play a specialized role, focusing more on analysis and visualization than data engineering. `);
+$('#writeUp1').text(    `UI UX designers create the user interface for an app, website, or other interactive media. Their work includes collaborating with product managers and engineers to gather requirements from users before designing ideas that can be communicated using storyboards. They also process flows or sitemaps. They'll then use their creativity 
+while applying color palettes based on what best fits into a particular design conceptually. `);
 $('#writeUp2').text('A UI/UX designer role may be a good fit if you:')
 $('#writeUp2a').text('Love designing visuals to tell stories and bring data to life')
 $('#writeUp2b').text('Prefer working with prepared data and under specific project guidelines')
@@ -189,15 +183,10 @@ $('#writeUp2c').text('Prefer working with prepared data and under specific proje
     $('#course1').text('Embedded systems ');
     $('#course2').text('Software Modeling and Simulation');
     $('#course3').text('Mobile Computing');
-$('#writeUp1').text(    `software engineering requires an in-depth study of software design 
-and implementation using a modern, object-oriented language with support for graphical user 
-interfaces and complex data structures. Topics covered will be specifications, design patterns, and abstraction techniques, including typing,
- access control, inheritance, and polymorphism. Students will learn the proper engineering use of techniques such as information hiding, classes, 
-objects, inheritance, exception handling, event-based systems, and concurrency. This course equips students with practical set of skills for the 
-development of software. The software crisis; why software fail (case studies);  Design as modeling; The Unified Modeling Language, Concepts and 
-techniques for testing and modifying software in evolving environments. Topics include software testing at the unit, module, subsystem, and system levels; 
-developer testing; automatic and manual techniques for generating test data; testing concurrent and distributed software; designing and implementing 
-software to increase maintainability and reuse; evaluating software for change; and validating software changes. `);
+$('#writeUp1').text(    ` Cyber security professionals, or information security analysts, have a wide range of responsibilities, but the crux of their job is to protect online data from being compromised.
+ As more of our personal information is stored online, the more important it becomes to step up security.the more important it becomes to step up security.
+Cyber security is a complex field, and many roles can be found within banks, retailers, e-tailers, healthcare, and government organizations. On the job, you can expect to safeguard an organization's files and network, install firewalls, create security plans, guard customer data, and monitor activity. 
+If a breach occurs, you'll be responsible for identifying the problem and finding a solution quickly.  `);
 $('#writeUp2').text('A Software Engineer role may be a good fit if you:')
 $('#writeUp2a').text('Love solving real world problems with technology')
 $('#writeUp2b').text('Want to flex both your creative and critical thinking skills')

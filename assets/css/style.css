@@ -261,11 +261,12 @@ justify-content: center;
 .optionrow{
     display: flex;
     align-items: center;
-    justify-content: space-between;
+    justify-content: space-around;
     height: 100vh;
     padding: 12px 44px;
   
 }
+
 .choice{
      display: flex;
     align-content: center;
@@ -314,6 +315,48 @@ background-image: linear-gradient(to left, red, #281564);
 }
 
 /* home.html */
+
+/* welcome-3.html */
+.test_container{
+    padding: 5%;
+   display: flex;
+    align-content: center;
+    justify-content: center;
+}
+.test_container a:nth-child(even){
+    text-decoration: none;
+    text-transform: capitalize;
+    text-align: center;
+    padding: 12px 12px;
+    width: 15%;
+    margin: 12px;
+    border-radius: 21px;
+background:  #6C63FF;
+color: white;
+transition: 0.5s all ease-in-out; 
+}
+
+.test_container a:nth-child(odd){
+    text-decoration: none;
+    text-transform: capitalize;
+    text-align: center;
+    padding: 12px 12px;
+    width: 15%;
+    margin: 12px;
+    border-radius: 21px;
+background:  #281564;
+color: white;
+transition: 0.5s all ease-in-out; 
+}
+
+
+.test_container a:hover{
+    text-decoration: none;
+color: white;
+background-image: linear-gradient(to left, #6C63FF, #281564);
+
+}
+/* welcome-3.html */
 
 /*welcome.html*/
 
@@ -546,6 +589,10 @@ transition: 0.5s ease all;
     margin-top:5%;
 }
 
+.qustionLabel h3{
+    margin: 12px;
+    font-weight: 700;
+}
 .qustionLabel p{
     font-weight: bold;
     color:#726e6e;
