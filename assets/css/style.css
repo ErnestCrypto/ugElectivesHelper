@@ -1200,6 +1200,35 @@ opacity:0.2;
 
 /*question.html*/
 
+/* home.html */
+.greetings{
+    display: block;
+    height: inherit;
+    text-align: center;
+    padding: 20px 3px;
+
+}
+.optionrow{
+    display: block;
+    height: inherit;
+
+}
+
+.choice{
+    height: inherit;
+
+}
+.choiceimg{
+    height: 100px;
+
+}
+
+.choice a{
+    width: 50%;
+
+}
+/* home.html */
+
 
 }
 
