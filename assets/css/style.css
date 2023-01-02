@@ -241,7 +241,7 @@ justify-content: center;
     justify-content: space-between;
     height: 30vh;
     padding: 20%;
-    background: #281564;
+    background-image:linear-gradient(to right,#281564,red) ;
         color: white;
 
 }
