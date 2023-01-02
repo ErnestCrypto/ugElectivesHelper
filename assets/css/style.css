@@ -1205,8 +1205,13 @@ opacity:0.2;
     display: block;
     height: inherit;
     text-align: center;
-    padding: 20px 3px;
+    padding: 20px 20px;
 
+}
+.greetings h2{
+    padding: 0% !important;
+    margin: 0 auto;
+    font-size: 28px;
 }
 .optionrow{
     display: block;
