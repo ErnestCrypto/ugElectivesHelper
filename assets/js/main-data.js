@@ -123,20 +123,33 @@ var elem = $('#myBar');
 
 var myRecommended = ()=>{
     if(outcome>=70 ){
- $('#recommend').text("Congratulations This Course is for You!");
+ $('#recommend').text("Congratulations Data Analyst is the  course  for You!");
   
-$('#writeUp1').text(    `Data Analyst often times focus on predictive analytics, using data to test hypotheses, train models, and predict uncertain outcomes.
+       $('#course1').text('Data mining and warehousing');
+        $('#course2').text('Data Structures and Algorithm');
+       $('#course3').text('Computational Mathematics');
+       $('#writeUp1').text(    `Data Analyst often times focus on predictive analytics, using data to test hypotheses, train models, and predict uncertain outcomes.
 
 Data Analyst typically excel in math and statistics, leverage open-source tools and programming languages like Python or R, and often handle large, structured and unstructured data sources.
- `);
+`);
+$('#writeUp2').text('A Data Analyst role may be a good fit if you:')
+$('#writeUp2a').text('Love to program and write code')
+$('#writeUp2b').text('Enjoy math and statistics')
+$('#writeUp2c').text('Can distill complex topics and communicate them clearly')
 
 }
   
  else{
-      $('#recommend').text("Sorry but you are not compatible with this course");
-   
-$('#writeUp1').text(    ` We recommend you to look for other career paths that are best suited in your interest. `);
-   }
+      $('#recommend').text("Sorry but you are not compatible with this course. We recommend you explore these electives instead");
+       $('#course1').text('Embedded systems ');
+    $('#course2').text('Software Modeling and Simulation');
+    $('#course3').text('Mobile Computing');
+      $('#writeUp1').text(    `Here are some of the elective courses you can explore `);
+$('#writeUp2').hide()
+$('#writeUp2a').hide()
+$('#writeUp2b').hide()
+$('#writeUp2c').hide()
+}
 
 }
 

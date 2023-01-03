@@ -125,7 +125,9 @@ var elem = $('#myBar');
 var myRecommended = ()=>{
     if(outcome>=70 ){
  $('#recommend').text("Congratulations This Course is for You!");
-  
+   $('#course1').text('Embedded systems ');
+    $('#course2').text('Software Modeling and Simulation');
+    $('#course3').text('Mobile Computing');
 $('#writeUp1').text(    `software engineering requires an in-depth study of software design 
 and implementation using a modern, object-oriented language with support for graphical user 
 interfaces and complex data structures. Topics covered will be specifications, design patterns, and abstraction techniques, including typing,
@@ -135,14 +137,24 @@ development of software. The software crisis; why software fail (case studies); 
 techniques for testing and modifying software in evolving environments. Topics include software testing at the unit, module, subsystem, and system levels; 
 developer testing; automatic and manual techniques for generating test data; testing concurrent and distributed software; designing and implementing 
 software to increase maintainability and reuse; evaluating software for change; and validating software changes.`);
-
+$('#writeUp2').text('A Software Engineer role may be a good fit if you:')
+$('#writeUp2a').text('Love solving real world problems with technology')
+$('#writeUp2b').text('Want to flex both your creative and critical thinking skills')
+$('#writeUp2c').text('Prefer working with prepared data and under specific project guidelines')
 }
   
  else{
-      $('#recommend').text("Sorry but you are not compatible with this course");
-   
-$('#writeUp1').text(    ` We recommend you to look for other career paths that are best suited in your interest. `);
-   }
+      $('#recommend').text("Sorry but you are not compatible with this course. We recommend you explore these electives instead");
+    $('#course1').text('Introductory Abstract Algebra');
+        $('#course2').text('Introductory Computational mathematics');
+       $('#course3').text('Data Ming and warehousing');
+$('#writeUp1').text(    ` Here are some of the elective courses you can explore  `);
+$('#writeUp2').hide()
+$('#writeUp2a').hide()
+$('#writeUp2b').hide()
+$('#writeUp2c').hide()  
+
+}
 
 }
 
